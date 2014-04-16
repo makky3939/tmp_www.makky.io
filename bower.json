@@ -1,0 +1,31 @@
+{
+  "name": "Makky.io",
+  "version": "0.0.0",
+  "authors": [
+    "@_Makky_"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.1.1",
+    "jquery": "~2.1.0"
+  },
+ "exportsOverride": {
+    "bootstrap": {
+        "js": "dist/js/bootstrap.min.js",
+        "css": "dist/css/bootstrap.min.css",
+        "fonts": "dist/fonts/*"
+    },
+    "jquery": {
+      "js": "dist/jquery.min.js"
+    }
+  }
+}

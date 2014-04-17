@@ -1,5 +1,6 @@
 module.exports = (grunt) ->
   "use strict"
+  grunt.loadNpmTasks "grunt-open"
   grunt.loadNpmTasks "grunt-bower-task"
   grunt.loadNpmTasks 'grunt-contrib-jade'
   grunt.loadNpmTasks "grunt-contrib-sass"
@@ -9,9 +10,14 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-contrib-copy"
   grunt.loadNpmTasks "grunt-contrib-connect"
   grunt.loadNpmTasks "grunt-contrib-concat"
-  
+
   grunt.initConfig
     pkg: grunt.file.readJSON("package.json")
+    open:
+      dev:
+        path: 'http://localhost:3939/'
+        app: 'Google Chrome'
+
     connect:
       server:
         options:
@@ -110,6 +116,7 @@ module.exports = (grunt) ->
     "copy"
     "jade"
     "connect"
+    "open"
     "watch"
   ]
 

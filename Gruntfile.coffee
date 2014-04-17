@@ -32,7 +32,6 @@ module.exports = (grunt) ->
           'ie 9'
           'ie 8'
           'ie 7'
-          'ie 6'
         ]
       default:
         src: "./dst/css/style.css"

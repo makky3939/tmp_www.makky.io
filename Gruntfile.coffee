@@ -10,6 +10,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-contrib-copy"
   grunt.loadNpmTasks "grunt-contrib-connect"
   grunt.loadNpmTasks "grunt-contrib-concat"
+  grunt.loadNpmTasks "grunt-autoprefixer"
 
   grunt.initConfig
     pkg: grunt.file.readJSON("package.json")
@@ -23,6 +24,19 @@ module.exports = (grunt) ->
         options:
           port: "3939"
           base: "dst"
+
+    autoprefixer:
+      options:
+        browsers: [
+          'last 3 version'
+          'ie 9'
+          'ie 8'
+          'ie 7'
+          'ie 6'
+        ]
+      default:
+        src: "./dst/css/style.css"
+        dest: "./dst/css/style.css"
 
     bower:
       install:
@@ -44,8 +58,8 @@ module.exports = (grunt) ->
         tasks: ["coffee"]
 
       sass:
-        files: "src/*.sass"
-        tasks: ["concat:sass", "sass"]
+        files: "src/css/*.sass"
+        tasks: ["concat:sass", "sass", "autoprefixer"]
 
     jade:
       site:
@@ -97,27 +111,26 @@ module.exports = (grunt) ->
         dest: 'src/css/tmp/style.sass'
 
 
-  grunt.registerTask "default", [
+  grunt.registerTask "build", [
     "clean"
     "bower:install"
     "concat"
     "sass"
+    "autoprefixer"
     "coffee"
     "copy"
     "jade"
   ]
 
-  grunt.registerTask "server", [
-    "clean"
-    "bower:install"
-    "concat"
-    "sass"
-    "coffee"
-    "copy"
-    "jade"
+  grunt.registerTask "serve", [
     "connect"
     "open"
     "watch"
   ]
+
+  grunt.registerTask 'server', () ->
+    grunt.log.warn 'The `server` task has been deprecated. Use `grunt serve` to start a server.'
+    grunt.task.run ['build']
+    grunt.task.run ['serve']
 
   return

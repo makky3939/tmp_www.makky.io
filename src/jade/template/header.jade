@@ -1,0 +1,23 @@
+nav.navbar.navbar-inverse.header(role = "navigation")
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle(type = "button", data-toggle = "collapse", data-target="#navbar-collapse-1")
+        span.sr-only Toggle Navigation
+        - for i in [,,,]
+          span.icon-bar
+      a.navbar-brand(href = "/") Makky.io
+
+    #navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        li
+          a(href = "http://blog.makkysnote.org", target="_brank") Blog
+        li
+          a(href = "/streetview") Streetview
+        li
+          a(href = "https://plus.google.com/u/0/photos/103944930745515141285/albums", target="_brank") Picture
+        li
+          a(href = "/apps") Apps
+        li
+          a(href = "/portfolio") Portfolio
+        li
+          a(href = "http://blog.makkysnote.org/contact/", target="_brank") Contact

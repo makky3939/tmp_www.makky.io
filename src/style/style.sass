@@ -1,0 +1,58 @@
+body
+  background: #fefefe
+  font-size: 16px
+  color: #323232
+
+p
+  font-size: 1em
+  font-weight: 200
+
+.author
+  margin: 16px auto
+  padding: 16px 0
+  border-bottom: 1px dashed #101010
+  p
+    font-size: 1.2em
+
+.logo
+  img
+    width: 100%
+    height: auto
+
+.profile
+  margin: 16px 8px
+  padding: 16px 0
+  border-top: 1px dashed $Blue
+  border-bottom: 1px dashed $Blue
+
+.social
+  margin: 8px 0 0 0
+  i
+    margin-right: 8px
+
+.top_menu
+  margin: 16px auto
+  padding: 16px 0
+  .panel
+    margin: 0
+    padding: 16px
+    text-align: center
+    border-top: 1px solid #ddd
+    border-radius: 0
+    box-shadow: none
+    &:nth-child(3n-2),
+    &:nth-child(3n-1)
+      border-right: 1px solid #ddd
+    &:nth-child(-n+3) 
+      border-top: none
+
+  i
+    font-size: 16em
+  a
+    color: $Blue
+    font-family:  Aldrich, 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif
+    transition: all .1s linear
+    &:hover
+      color: #fefefe
+      background: $Blue
+      text-decoration: none

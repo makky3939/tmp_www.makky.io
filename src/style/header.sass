@@ -1,16 +1,23 @@
+@import url("http://fonts.googleapis.com/css?family=Aldrich")
 .header
-  background: #323232
-  margin: 0
+  color: $Blue
+  font-family:  Aldrich, 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif
+
+.title
+  padding: 8px 45px
+
+.navvar
+  border-radius: 0
 
 .navbar-inverse
-  background-color: #323232
-  border-color: #080808
+  background-color: $Blue
+  border-color: $Blue
   border-radius: 0
 
   .navbar-brand 
-    color: #999
+    color: $LightGray
     &:first-letter
-      color: #1c93ac
+      color: $Blue
 
   .navbar-brand:hover,
   .navbar-brand:focus 
@@ -18,20 +25,20 @@
     background-color: transparent
 
   .navbar-text
-    color: #999
+    color: $LightGray
 
   .navbar-nav > li > a
-    color: #999
+    color: $LightGray
 
   .navbar-nav > li > a:hover,
   .navbar-nav > li > a:focus
-    color: #fff
+    color: $DarkBlue
     background-color: transparent
 
   .navbar-nav > .active > a,
   .navbar-nav > .active > a:hover,
   .navbar-nav > .active > a:focus
-    color: #fff
+    color: $DarkBlue
     background-color: #080808
 
   .navbar-nav > .disabled > a,
@@ -41,18 +48,20 @@
     background-color: transparent
 
   .navbar-toggle
-    border-color: #333
+    border-color: $LightGray
 
   .navbar-toggle:hover,
   .navbar-toggle:focus
-    background-color: #333
+    background-color: $LightGray
+    .icon-bar
+      background-color: $Blue
 
   .navbar-toggle .icon-bar
-    background-color: #1c93ac
+    background-color: $LightGray
 
   .navbar-collapse,
   .navbar-form
-    border-color: #101010
+    border-color: $LightGray
 
   .navbar-nav > .open > a,
   .navbar-nav > .open > a:hover,
@@ -61,7 +70,7 @@
     background-color: #080808
 
   .navbar-link
-    color: #999
+    color: $LightGray
 
   .navbar-link:hover
     color: #fff
@@ -69,10 +78,10 @@
 @media (max-width: 767px)
   .navbar-inverse
     .navbar-nav .open .dropdown-menu > .dropdown-header
-      border-color: #080808
+      border-color: $LightGray
 
     .navbar-nav .open .dropdown-menu .divider
-      background-color: #080808
+      background-color: $LightGray
 
     .navbar-nav .open .dropdown-menu > li > a
       color: #999

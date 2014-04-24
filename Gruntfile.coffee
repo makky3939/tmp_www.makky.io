@@ -24,6 +24,10 @@ module.exports = (grunt) ->
         options:
           port: "3939"
           base: "dst"
+          livereload: 35729
+      livereload:
+        options:
+          open: true
 
     autoprefixer:
       options:
@@ -34,8 +38,8 @@ module.exports = (grunt) ->
           'ie 7'
         ]
       default:
-        src: "./dst/css/style.css"
-        dest: "./dst/css/style.css"
+        src: "./dst/style/style.css"
+        dest: "./dst/style/style.css"
 
     bower:
       install:
@@ -57,8 +61,11 @@ module.exports = (grunt) ->
         tasks: ["coffee"]
 
       sass:
-        files: "src/css/*.sass"
+        files: "src/style/*.sass"
         tasks: ["concat:sass", "sass", "autoprefixer"]
+
+      options:
+        livereload: true
 
     jade:
       site:
@@ -83,7 +90,7 @@ module.exports = (grunt) ->
           style: 'expanded'
           compass: true
         files:
-          "dst/css/style.css": "src/css/tmp/style.sass"
+          "dst/style/style.css": "src/style/tmp/style.sass"
 
     copy:
       main:
@@ -102,12 +109,11 @@ module.exports = (grunt) ->
     concat:
       sass:
         src: [
-          'src/css/init.sass'
-          'src/css/mixin.sass'
-          'src/css/color.sass'
-          'src/css/*.sass'
+          'src/style/init.sass'
+          'src/style/color.sass'
+          'src/style/*.sass'
         ],
-        dest: 'src/css/tmp/style.sass'
+        dest: 'src/style/tmp/style.sass'
 
 
   grunt.registerTask "build", [

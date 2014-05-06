@@ -1,5 +1,5 @@
 .header.title
-  h1 Makky.io
+  a(href = "/") Makky.io
 nav.navbar.navbar-inverse.header(role = "navigation")
   .container-fluid
     .navbar-header
@@ -10,15 +10,4 @@ nav.navbar.navbar-inverse.header(role = "navigation")
 
     #navbar-collapse-1.collapse.navbar-collapse
       ul.nav.navbar-nav
-        li
-          a(href = "http://blog.makkysnote.org", target="_brank") Blog
-        li
-          a(href = "/streetview") Streetview
-        li
-          a(href = "https://plus.google.com/u/0/photos/103944930745515141285/albums", target="_brank") Picture
-        li
-          a(href = "/apps") Apps
-        li
-          a(href = "/portfolio") Portfolio
-        li
-          a(href = "http://blog.makkysnote.org/contact/", target="_brank") Contact
+        include ../template/menu

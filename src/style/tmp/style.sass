@@ -51,11 +51,19 @@ $LightGray: #f1f1f1
       color: $LightGray
 @import url("http://fonts.googleapis.com/css?family=Aldrich")
 .header
-  color: $Blue
   font-family:  Aldrich, 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif
 
 .title
-  padding: 8px 45px
+  padding: 24px 48px 8px 48px
+  a
+    font-size: 2.56em
+    padding: 6px
+    color: $Blue
+    transition: background .1s linear
+    &:hover
+      background: $Blue
+      text-decoration: none
+      color: $LightGray
 
 .navvar
   border-radius: 0
@@ -156,7 +164,7 @@ $LightGray: #f1f1f1
 
 
 body
-  background: #fefefe
+  background: $LightGray
   font-size: 16px
   color: #323232
 
@@ -196,6 +204,7 @@ p
     text-align: center
     border-top: 1px solid #ddd
     border-radius: 0
+    background: $LightGray
     box-shadow: none
     &:nth-child(3n-2),
     &:nth-child(3n-1)
@@ -210,6 +219,6 @@ p
     font-family:  Aldrich, 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif
     transition: all .1s linear
     &:hover
-      color: #fefefe
+      color: $LightGray
       background: $Blue
       text-decoration: none

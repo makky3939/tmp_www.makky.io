@@ -52,6 +52,10 @@ module.exports = (grunt) ->
           cleanBowerDir: false
 
     watch:
+      copy:
+        files: "src/image/**"
+        tasls: ["copy"]
+
       jade:
         files: '**/*.jade'
         tasks: ['jade']
@@ -97,9 +101,10 @@ module.exports = (grunt) ->
         files: [
           {
             expand: true
-            src: ["src/image/*.*"]
+            cwd: "src/image"
+            src: ["**"]
             dest: "dst/image"
-            flatten: true
+            flatten: false
           }
         ]
 

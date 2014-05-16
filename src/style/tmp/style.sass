@@ -2,15 +2,30 @@
 
 *
   position: relative
+$White: #ffffff
+$Black: #3b4755
+
 $DarkBlue: #237dac
 $Blue: #3ba2c5
-
 $LigheBlue: #afdefa
 
-$Black: #3b4755
+$DarkGray: #4f5f6f
+$Gray: #dddddd
 $LightGray: #f1f1f1
 
-// #323232
+// $LightPink: #e65977
+$WhitePink: #fcf2f5
+$Pink: #e65977
+// $DarkPink: #e65977
+
+// $LightYellow: #e6d337
+$WhiteYellow: #fcfcf2
+$Yellow: #efdb31
+// $DarkYellow: #e6d337
+
+$WhiteGreen: #f2fcf4
+$Green: #1ac174
+// $DarkGreen: #1ac174
 .about
   margin-bottom: 16px
   h2
@@ -209,6 +224,21 @@ $LightGray: #f1f1f1
         border-right: 1px solid #ddd
       &:nth-child(-n+2)
         border-top: none
+.portfolio
+  .panel
+    background-color: $White
+    h4
+      padding-bottom: 8px
+      border-bottom: 1px solid $Gray
+    &:hover
+      // border-color: $Black
+      
+    img
+      width: 100%
+      height: auto
+      border-radius: 4px
+  a
+    text-decoration: none
 body
   background: $LightGray
   font-size: 16px
@@ -257,11 +287,13 @@ h5
     margin-right: 8px
 .tool
   .panel
-    padding: 8px
-    border-color: $Blue
-    background-color: $LightGray
+    background-color: $White
+    h4
+      padding-bottom: 8px
+      border-bottom: 1px solid $Gray
     &:hover
-      border-color: $Black
+      // border-color: $Black
+      
     img
       width: 100%
       height: auto

@@ -14,16 +14,19 @@
     "test",
     "tests"
   ],
+  "directory": "bower_components",
   "devDependencies": {
     "bootstrap": "~3.1.1",
     "jquery": "~2.1.0",
-    "font-awesome": "~4.0.3"
+    "font-awesome": "~4.0.3",
+    "angular": "~1.2.16",
+    "angular-route": "~1.2.16"
   },
- "exportsOverride": {
+  "exportsOverride": {
     "bootstrap": {
-        "js": "dist/js/bootstrap.min.js",
-        "css": "dist/css/bootstrap.min.css",
-        "fonts": "dist/fonts/*"
+      "js": "dist/js/bootstrap.min.js",
+      "css": "dist/css/bootstrap.min.css",
+      "fonts": "dist/fonts/*"
     },
     "jquery": {
       "js": "dist/jquery.min.js"
@@ -31,6 +34,13 @@
     "font-awesome": {
       "css": "css/font-awesome.min.css",
       "fonts": "fonts/*"
+    },
+    "angular": {
+      "js": "angular.min.js",
+      "css": "angular-csp.css"
+    },
+    "angular-route": {
+      "js": "angular-route.min.js"
     }
   }
 }

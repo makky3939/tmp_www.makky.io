@@ -1,5 +1,5 @@
+"use strict"
 module.exports = (grunt) ->
-  "use strict"
   grunt.loadNpmTasks "grunt-open"
   grunt.loadNpmTasks "grunt-bower-task"
   grunt.loadNpmTasks 'grunt-contrib-jade'
@@ -74,19 +74,26 @@ module.exports = (grunt) ->
     jade:
       site:
         expand: true
-        cwd: 'src/jade'
-        src: ['*.jade']
-        dest: 'dst'
+        cwd: 'src/jade/'
+        src: ['{,*/}*.jade']
+        dest: 'dst/'
         ext: '.html'
         options:
           pretty: true
 
     coffee:
-      compile:
-        options:
-          join: true
-        files:
-          "dst/js/app.js": ["src/js/*.coffee"]
+      # compile:
+      #   options:
+      #     join: true
+      #   files:
+      #     "dst/js/app.js": ["src/js/*.coffee"]
+
+      glob_to_multiple:
+        expand: true
+        cwd: 'src/js/'
+        src: ['**/*.coffee']
+        dest: 'dst/js/'
+        ext: '.js'
 
     sass:
       compile:

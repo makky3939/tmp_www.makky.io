@@ -1,5 +1,4 @@
 'use strict'
-
 angular.module('makkyio')
   # Index
   .controller('IndexCtrl', ($scope) ->

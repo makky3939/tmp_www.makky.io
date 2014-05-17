@@ -1,0 +1,33 @@
+'use strict'
+angular.module('makkyio')
+  # Index
+  .controller('IndexCtrl', ($scope) ->
+  )
+
+  # Tool
+  .controller('ToolCtrl', ($scope, ToolModel) ->
+    $scope.tools = ToolModel
+  )
+
+  .controller('ToolDetailCtrl', ($scope, $routeParams, ToolModel) ->
+    $scope.tools = ToolModel
+    $scope.tool_name = $routeParams.tool_name
+    for key, val in $scope.tools
+      console.log key
+      if key.name == $scope.tool_name
+        $scope.tool = key
+  )
+
+  # Portfolio
+  .controller('PortfolioCtrl', ($scope, PortfolioModel) ->
+    $scope.portfolios = PortfolioModel
+  )
+
+  .controller('PortfolioDetailCtrl', ($scope, $routeParams, PortfolioModel) ->
+    $scope.portfolios = PortfolioModel
+    $scope.portfolio_name = $routeParams.portfolio_name
+  )
+
+  # About
+  .controller('AboutCtrl', ($scope) ->
+  )

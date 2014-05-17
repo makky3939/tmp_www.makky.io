@@ -1,0 +1,9 @@
+.container.tool
+  h1 Tool
+  .col-md-6(ng-repeat= "item in tools")
+    .panel.panel-default
+      .panel-body
+        h4 {{item.title}}
+        img(src = "{{item.image_path}}")
+      .panel-footer
+        a(href= "{{item.link_path}}") Link

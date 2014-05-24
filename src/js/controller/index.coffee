@@ -25,7 +25,12 @@ angular.module('makkyio')
 
   .controller('PortfolioDetailCtrl', ($scope, $routeParams, PortfolioModel) ->
     $scope.portfolios = PortfolioModel
+    $scope.portfolio_type = $routeParams.portfolio_type
     $scope.portfolio_name = $routeParams.portfolio_name
+    for key, val in $scope.portfolios[$scope.portfolio_type]
+      console.log key
+      if key.name == $scope.portfolio_name
+        $scope.portfolio = key
   )
 
   # About

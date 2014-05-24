@@ -40,7 +40,7 @@ angular
         templateUrl: 'views/portfolio.html',
         controller: 'PortfolioCtrl'
       })
-      .when('/portfolio/:portfolio_name', {
+      .when('/portfolio/:portfolio_type/:portfolio_name', {
         templateUrl: 'views/portfolio_detail.html',
         controller: 'PortfolioDetailCtrl'
       })

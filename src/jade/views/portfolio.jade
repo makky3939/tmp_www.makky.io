@@ -1,73 +1,81 @@
 .container.portfolio
   h1 Portfolio
 
-.container.portfolio
-  h2 WebApp
-  a(href = "#").col-md-4
+  .col-md-6(ng-repeat= "item in portfolios.webapp")
     .panel.panel-default
       .panel-body
-        h4 Hexadecimal Generator
-        img(src = "image/tool/hexadecimal_generator.png")
+        h4 {{item.title}}
+        img(src = "{{item.image_path}}")
+      .panel-footer
+        a(href= "{{item.detail_path}}") Detail
 
-  a(href = "#").col-md-4
-    .panel.panel-default
-      .panel-body
-        h4 Canvas Wave
-        img(src = "image/tool/canvas_wave.png")
+//- .container.portfolio
+//-   h2 WebApp
+//-   a(href = "#").col-md-4
+//-     .panel.panel-default
+//-       .panel-body
+//-         h4 Hexadecimal Generator
+//-         img(src = "image/tool/hexadecimal_generator.png")
 
-  a(href = "#").col-md-4
-    .panel.panel-default
-      .panel-body
-        h4 Canvas Clock
-.container.portfolio
-  h2 WebSite
-  a(href = "#").col-md-4
-    .panel.panel-default
-      .panel-body
-        h4 Hexadecimal Generator
-        img(src = "image/tool/hexadecimal_generator.png")
+//-   a(href = "#").col-md-4
+//-     .panel.panel-default
+//-       .panel-body
+//-         h4 Canvas Wave
+//-         img(src = "image/tool/canvas_wave.png")
 
-  a(href = "#").col-md-4
-    .panel.panel-default
-      .panel-body
-        h4 Canvas Wave
-        img(src = "image/tool/canvas_wave.png")
+//-   a(href = "#").col-md-4
+//-     .panel.panel-default
+//-       .panel-body
+//-         h4 Canvas Clock
+//- .container.portfolio
+//-   h2 WebSite
+//-   a(href = "#").col-md-4
+//-     .panel.panel-default
+//-       .panel-body
+//-         h4 Hexadecimal Generator
+//-         img(src = "image/tool/hexadecimal_generator.png")
 
-  a(href = "#").col-md-4
-    .panel.panel-default
-      .panel-body
-        h4 Canvas Clock
-.container.portfolio
-  h2 Streetview
-  a(href = "#").col-md-2
-    .panel.panel-default
-      .panel-body
-        h4 Hexadecimal Generator
-        img(src = "image/tool/hexadecimal_generator.png")
+//-   a(href = "#").col-md-4
+//-     .panel.panel-default
+//-       .panel-body
+//-         h4 Canvas Wave
+//-         img(src = "image/tool/canvas_wave.png")
 
-  a(href = "#").col-md-2
-    .panel.panel-default
-      .panel-body
-        h4 Canvas Wave
-        img(src = "image/tool/canvas_wave.png")
+//-   a(href = "#").col-md-4
+//-     .panel.panel-default
+//-       .panel-body
+//-         h4 Canvas Clock
+//- .container.portfolio
+//-   h2 Streetview
+//-   a(href = "#").col-md-2
+//-     .panel.panel-default
+//-       .panel-body
+//-         h4 Hexadecimal Generator
+//-         img(src = "image/tool/hexadecimal_generator.png")
 
-  a(href = "#").col-md-2
-    .panel.panel-default
-      .panel-body
-        h4 Canvas Clock
-  a(href = "#").col-md-2
-    .panel.panel-default
-      .panel-body
-        h4 Hexadecimal Generator
-        img(src = "image/tool/hexadecimal_generator.png")
+//-   a(href = "#").col-md-2
+//-     .panel.panel-default
+//-       .panel-body
+//-         h4 Canvas Wave
+//-         img(src = "image/tool/canvas_wave.png")
 
-  a(href = "#").col-md-2
-    .panel.panel-default
-      .panel-body
-        h4 Canvas Wave
-        img(src = "image/tool/canvas_wave.png")
+//-   a(href = "#").col-md-2
+//-     .panel.panel-default
+//-       .panel-body
+//-         h4 Canvas Clock
+//-   a(href = "#").col-md-2
+//-     .panel.panel-default
+//-       .panel-body
+//-         h4 Hexadecimal Generator
+//-         img(src = "image/tool/hexadecimal_generator.png")
 
-  a(href = "#").col-md-2
-    .panel.panel-default
-      .panel-body
-        h4 Canvas Clock
+//-   a(href = "#").col-md-2
+//-     .panel.panel-default
+//-       .panel-body
+//-         h4 Canvas Wave
+//-         img(src = "image/tool/canvas_wave.png")
+
+//-   a(href = "#").col-md-2
+//-     .panel.panel-default
+//-       .panel-body
+//-         h4 Canvas Clock

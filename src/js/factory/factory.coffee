@@ -9,6 +9,7 @@ angular.module('makkyio')
           link_path: "#/tool/microphone_visualizer"
           image_path: "image/tool/microphone_visualizer.png"
           app_path: "app/microphone_visualizer.html"
+          live_path: "#/tool/microphone_visualizer/live"
           tags: [""]
           description: ""
           updated_at: "2014/03/29"

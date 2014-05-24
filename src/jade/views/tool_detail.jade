@@ -1,10 +1,17 @@
 .container.tool_detail
   h1 Tool/{{tool.title}}
-  p {{tags}}
-  h3 説明
-  img(ng-src="{{tool.image_path}}")
-  p {{tool.discription}}
-  h3 作成日
-  p {{tool.created_at}}
-  h3 更新日
-  p {{tool.updated_at}}
+  .col-md-12.page-section
+    .col-md-9
+      p.description {{tool.description}}
+    .col-md-3
+      p 作成日:{{tool.created_at}}
+      p 更新日:{{tool.updated_at}}
+      p タグ:{{tags}}
+
+  .col-md-12.page-section
+    img(ng-src="{{tool.image_path}}")
+
+  .col-md-12.page-section
+    a.btn.btn-default.col-md-3.btn-lg(href="{{tool.live_path}}")
+      i.fa.fa-play-circle
+      |Live

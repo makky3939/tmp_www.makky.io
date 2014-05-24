@@ -17,40 +17,46 @@
 
 'use strict'
 angular
-  .module('makkyio', [
-    'ngRoute'
-  ])
-  .config(($routeProvider) ->
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/index.html',
+  .module('makkyio', ['ui.router'])
+  .config(($stateProvider, $urlRouterProvider) ->
+    $urlRouterProvider.otherwise "/"
+    $stateProvider
+      .state('/', {
+        url: "/",
+        templateUrl: "views/index.html"
         controller: 'IndexCtrl'
       })
 
-      .when('/tool', {
-        templateUrl: 'views/tool.html',
+      .state('/tool', {
+        url: "/tool"
+        templateUrl: 'views/tool.html'
         controller: 'ToolCtrl'
       })
-      .when('/tool/:tool_name', {
-        templateUrl: 'views/tool_detail.html',
+      .state('/tool/:tool_name', {
+        url: "/tool/:tool_name"
+        templateUrl: 'views/tool_detail.html'
         controller: 'ToolDetailCtrl'
       })
 
-      .when('/portfolio', {
-        templateUrl: 'views/portfolio.html',
-        controller: 'PortfolioCtrl'
+      .state('/tool/:tool_name/live', {
+        url: "/tool/:tool_name/live"
+        templateUrl: 'app/microphone_visualizer.html'
       })
-      .when('/portfolio/:portfolio_type/:portfolio_name', {
-        templateUrl: 'views/portfolio_detail.html',
-        controller: 'PortfolioDetailCtrl'
-      })
+      # .when('/portfolio', {
+      #   templateUrl: 'views/portfolio.html',
+      #   controller: 'PortfolioCtrl'
+      # })
+      # .when('/portfolio/:portfolio_type/:portfolio_name', {
+      #   templateUrl: 'views/portfolio_detail.html',
+      #   controller: 'PortfolioDetailCtrl'
+      # })
 
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
+      # .when('/about', {
+      #   templateUrl: 'views/about.html',
+      #   controller: 'AboutCtrl'
+      # })
 
-      .otherwise({
-        redirectTo: '/'
-      });
+      # .otherwise({
+      #   redirectTo: '/'
+      # });
   )

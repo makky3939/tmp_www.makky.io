@@ -20,7 +20,7 @@
     "jquery": "~2.1.0",
     "font-awesome": "~4.0.3",
     "angular": "~1.2.16",
-    "angular-route": "~1.2.16"
+    "angular-ui-router": "~0.2.10"
   },
   "exportsOverride": {
     "bootstrap": {
@@ -39,8 +39,8 @@
       "js": "angular.min.js",
       "css": "angular-csp.css"
     },
-    "angular-route": {
-      "js": "angular-route.min.js"
+    "angular-ui-router": {
+      "js": "release/angular-ui-router.min.js"
     }
   }
 }

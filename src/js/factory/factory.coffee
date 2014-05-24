@@ -4,30 +4,22 @@ angular.module('makkyio')
     tools = 
       [
         {
+          name: "microphone_visualizer"
+          title: "Microphone Visualizer"
+          link_path: "#/tool/microphone_visualizer"
+          image_path: "image/tool/microphone_visualizer.png"
+          app_path: "app/microphone_visualizer.html"
+          live_path: "#/tool/microphone_visualizer/live"
+          tags: [""]
+          description: ""
+          updated_at: "2014/03/29"
+          created_at: "2014/03/15"
+        }
+        {
           name: "hexadecimal_generator"
           title: "Hexadecimal Generator"
           link_path: "#/tool/hexadecimal_generator"
           image_path: "image/tool/hexadecimal_generator.png"
-          tags: [""]
-          description: ""
-          updated_at: ""
-          created_at: ""
-        }
-        {
-          name: "canvas_wave"
-          title: "Canvas Wave"
-          link_path: "#/tool/canvas_wave"
-          image_path: "image/tool/canvas_wave.png"
-          tags: [""]
-          description: ""
-          updated_at: ""
-          created_at: ""
-        }
-        {
-          name: "canvas_clock"
-          title: "Canvas Clock"
-          link_path: "#/tool/canvas_clock"
-          image_path: "image/tool/canvas_clock.png"
           tags: [""]
           description: ""
           updated_at: ""

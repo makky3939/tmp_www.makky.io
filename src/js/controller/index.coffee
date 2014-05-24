@@ -9,11 +9,10 @@ angular.module('makkyio')
     $scope.tools = ToolModel
   )
 
-  .controller('ToolDetailCtrl', ($scope, $routeParams, ToolModel) ->
+  .controller('ToolDetailCtrl', ($scope, $stateParams, ToolModel) ->
     $scope.tools = ToolModel
-    $scope.tool_name = $routeParams.tool_name
+    $scope.tool_name = $stateParams.tool_name
     for key, val in $scope.tools
-      console.log key
       if key.name == $scope.tool_name
         $scope.tool = key
   )

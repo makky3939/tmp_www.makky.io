@@ -14,10 +14,10 @@ angular.module('makkyio')
           created_at: ""
         }
         {
-          name: "canvas_wave"
-          title: "Canvas Wave"
-          link_path: "#/tool/canvas_wave"
-          image_path: "image/tool/canvas_wave.png"
+          name: "microphone_visualizer"
+          title: "Microphone Visualizer"
+          link_path: "#/tool/microphone_visualizer"
+          image_path: "image/tool/microphone_visualizer.png"
           tags: [""]
           description: ""
           updated_at: ""

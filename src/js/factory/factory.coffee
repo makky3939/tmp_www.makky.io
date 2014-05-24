@@ -36,3 +36,21 @@ angular.module('makkyio')
       ]
     return tools
   )
+
+  .factory('PortfolioModel', () ->
+    _webapps = 
+      [
+        {
+          name: "kasuga _beefstroganoff"
+          title: "Kasuga BeefStroganoff"
+          link_path: ""
+          image_path: ""
+          tags: [""]
+          discription: ""
+          updated_at: ""
+          created_at: ""
+        }
+
+      ]
+    return {webapps: _webapps}
+  )

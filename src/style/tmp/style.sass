@@ -1,0 +1,333 @@
+@import "compass"
+
+*
+  position: relative
+$White: #ffffff
+$Black: #3b4755
+
+$DarkBlue: #237dac
+$Blue: #3ba2c5
+$LigheBlue: #afdefa
+
+$DarkGray: #4f5f6f
+$Gray: #dddddd
+$LightGray: #f1f1f1
+
+// $LightPink: #e65977
+$WhitePink: #fcf2f5
+$Pink: #e65977
+// $DarkPink: #e65977
+
+// $LightYellow: #e6d337
+$WhiteYellow: #fcfcf2
+$Yellow: #efdb31
+// $DarkYellow: #e6d337
+
+$WhiteGreen: #f2fcf4
+$Green: #1ac174
+// $DarkGreen: #1ac174
+.about
+  margin-bottom: 16px
+  h2
+    margin-top: 24px
+    margin-bottom: 4px
+#micCanvas
+  display: block
+  margin: 0 auto
+  width: 100%
+  max-width: 1024px
+  height: 768px
+
+.app-live
+  margin-bottom: 16px
+
+.footer,
+.footer_menu
+  font-family:  Aldrich, 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif
+  color: #acacac
+  margin: 0
+  padding: 8px 0
+
+  p
+    margin: 0
+    line-height: 2
+
+  .text-right a
+    margin-right: 8px
+
+  .container
+    padding: 0
+
+  .col-md-6,
+  .col-md-12,
+  .col-cs-12
+    padding: 0
+
+.footer
+  background: $Black
+  border-radius: 0
+  a
+    color: #acacac
+    &:hover
+      color: $Blue
+
+.footer_menu
+  background: $Blue
+  color: $LightGray
+  padding: 0
+  margin: 0
+  .navbar-nav
+    a
+      color: $LightGray
+@import url("http://fonts.googleapis.com/css?family=Aldrich")
+.header
+  font-family:  Aldrich, 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif
+
+.title
+  padding: 24px 48px 8px 48px
+  a
+    font-size: 2.56em
+    padding: 6px
+    color: $Blue
+    transition: background .1s linear
+    &:hover
+      background: $Blue
+      text-decoration: none
+      color: $LightGray
+
+.navvar
+  border-radius: 0
+
+.navbar-inverse
+  background-color: $Blue
+  border-color: $Blue
+  border-radius: 0
+
+  .navbar-brand 
+    color: $LightGray
+    &:first-letter
+      color: $Blue
+
+  .navbar-brand:hover,
+  .navbar-brand:focus 
+    color: #fff
+    background-color: transparent
+
+  .navbar-text
+    color: $LightGray
+
+  .navbar-nav > li > a
+    color: $LightGray
+
+  .navbar-nav > li > a:hover,
+  .navbar-nav > li > a:focus
+    color: $DarkBlue
+    background-color: transparent
+
+  .navbar-nav > .active > a,
+  .navbar-nav > .active > a:hover,
+  .navbar-nav > .active > a:focus
+    color: $DarkBlue
+    background-color: #080808
+
+  .navbar-nav > .disabled > a,
+  .navbar-nav > .disabled > a:hover,
+  .navbar-nav > .disabled > a:focus
+    color: #444
+    background-color: transparent
+
+  .navbar-toggle
+    border-color: $LightGray
+
+  .navbar-toggle:hover,
+  .navbar-toggle:focus
+    background-color: $LightGray
+    .icon-bar
+      background-color: $Blue
+
+  .navbar-toggle .icon-bar
+    background-color: $LightGray
+
+  .navbar-collapse,
+  .navbar-form
+    border-color: $LightGray
+
+  .navbar-nav > .open > a,
+  .navbar-nav > .open > a:hover,
+  .navbar-nav > .open > a:focus
+    color: #fff
+    background-color: #080808
+
+  .navbar-link
+    color: $LightGray
+
+  .navbar-link:hover
+    color: #fff
+
+@media (max-width: 767px)
+  .navbar-inverse
+    .navbar-nav .open .dropdown-menu > .dropdown-header
+      border-color: $LightGray
+
+    .navbar-nav .open .dropdown-menu .divider
+      background-color: $LightGray
+
+    .navbar-nav .open .dropdown-menu > li > a
+      color: #999
+
+    .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-nav .open .dropdown-menu > li > a:focus
+      color: #fff
+      background-color: transparent
+
+    .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-nav .open .dropdown-menu > .active > a:focus
+      color: #fff
+      background-color: #080808
+
+    .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-nav .open .dropdown-menu > .disabled > a:focus
+      color: #444
+      background-color: transparent
+
+
+#index
+  margin: 16px auto
+  padding: 16px 0
+  .panel
+    margin: 0
+    padding: 16px
+    text-align: center
+    border-top: 1px solid #ddd
+    border-radius: 0
+    background: $LightGray
+    box-shadow: none
+    &:nth-child(3n-2),
+    &:nth-child(3n-1)
+      border-right: 1px solid #ddd
+    &:nth-child(-n+3)
+      border-top: none
+
+  i
+    font-size: 16em
+  a
+    color: $Blue
+    font-family:  Aldrich, 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif
+    transition: all .1s linear
+    &:hover
+      color: $LightGray
+      background: $Blue
+      text-decoration: none
+
+@media (max-width: 992px)
+  #index
+    .panel
+      &:nth-child(3n-2),
+      &:nth-child(3n-1)
+        border-right: 0px solid #ddd
+      &:nth-child(-n+3)
+        border-top: 1px solid #ddd
+
+      &:nth-child(2n-1)
+        border-right: 1px solid #ddd
+      &:nth-child(-n+2)
+        border-top: none
+.portfolio
+  .panel
+    background-color: $White
+    h4
+      padding-bottom: 8px
+      border-bottom: 1px solid $Gray
+    &:hover
+      // border-color: $Black
+      
+    img
+      width: 100%
+      height: auto
+      border-radius: 4px
+  a
+    text-decoration: none
+
+.portfolio_detail
+  .image
+    width: 100%
+    height: auto
+  i
+    margin-right: 8px
+  .description
+    line-height: 1.6
+body
+  background: $LightGray
+  font-size: 16px
+  color: #323232
+
+p
+  font-size: 1em
+  font-weight: 200
+
+a
+  color: $Blue
+  &:hover
+    color: $DarkBlue
+
+h1,
+h2,
+h3,
+h4,
+h5
+  color: $Black
+
+.container
+  padding: 0
+
+.page-section
+  padding-bottom: 8px
+  margin: 32px 0 16px
+  border-bottom: 1px solid $Blue
+
+.author
+  margin: 16px auto
+  padding: 16px 0
+  border-bottom: 1px dashed #101010
+  p
+    font-size: 1.2em
+
+.logo
+  img
+    width: 100%
+    height: auto
+
+.profile
+  margin: 16px 8px
+  padding: 16px 0
+  border-top: 1px dashed $Blue
+  border-bottom: 1px dashed $Blue
+
+.social
+  margin: 8px 0 0 0
+  i
+    margin-right: 8px
+.tool
+  .panel
+    background-color: $White
+    h4
+      padding-bottom: 8px
+      border-bottom: 1px solid $Gray
+    &:hover
+      // border-color: $Black
+      
+    img
+      width: 100%
+      height: auto
+      border-radius: 4px
+  a
+    text-decoration: none
+
+.tool_detail
+  margin-bottom: 16px
+  img
+    width: 100%
+    height: auto
+    border-radius: 4px

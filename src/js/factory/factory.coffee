@@ -46,7 +46,23 @@ angular.module('makkyio')
           updated_at: "2013/08/23"
           created_at: "2013/11/01"
         }
-
       ]
-    return {webapp: _webapp}
+    _website =
+      [
+        {
+          name: "kasuga14_freshman"
+          title: "春日地区新入生歓迎会2014"
+          tags: [""]
+          detail_path: "#/portfolio/webapp/kasuga14_freshman"
+          blog_path: ""
+          live_path: ""
+          git_path: "https://github.com/kuradai/kasuga14_freshman"
+          image_path: "image/portfolio/kasuga14_freshman.png"
+          images_path: ""
+          description: "2014年度の筑波大学 春日地区新入生歓迎会のWebサイトです。"
+          updated_at: "2014/04/13"
+          created_at: "2014/03/24"
+        }
+      ]
+    return {webapp: _webapp, website: _website}
   )

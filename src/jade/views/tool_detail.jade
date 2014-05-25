@@ -1,5 +1,8 @@
 .container.tool_detail
-  h1 Tool/{{tool.title}}
+  h1 
+    a(href="#/tool") Tool
+    |/{{tool.title}}
+
   .col-md-12.page-section
     .col-md-9
       p.description {{tool.description}}
@@ -12,6 +15,6 @@
     img(ng-src="{{tool.image_path}}")
 
   .col-md-12
-    a.btn.btn-default.col-md-3.btn-lg(href="{{tool.live_path}}" target="_brank")
+    a.btn.btn-default.col-md-3.btn-lg(href="{{tool.live_path}}", ng-Show="{{portfolio.blog_path}}", target="_brank")
       i.fa.fa-play-circle
       |Live

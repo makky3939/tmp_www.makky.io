@@ -1,13 +1,25 @@
 .container.portfolio
   h1 Portfolio
 
-  .col-md-6(ng-repeat= "item in portfolios.webapp")
-    .panel.panel-default
-      .panel-body
-        h4 {{item.title}}
-        img(src = "{{item.image_path}}")
-      .panel-footer
-        a(href= "{{item.detail_path}}") Detail
+  .col-md-12
+    h2 WebApp
+    .col-md-6(ng-repeat= "item in portfolios.webapp")
+      .panel.panel-default
+        .panel-body
+          h4 {{item.title}}
+          img(src = "{{item.image_path}}")
+        .panel-footer
+          a(href= "{{item.detail_path}}") Detail
+
+  .col-md-12
+    h2 WebSite
+    .col-md-6(ng-repeat= "item in portfolios.website")
+      .panel.panel-default
+        .panel-body
+          h4 {{item.title}}
+          img(src = "{{item.image_path}}")
+        .panel-footer
+          a(href= "{{item.detail_path}}") Detail
 
 //- .container.portfolio
 //-   h2 WebApp

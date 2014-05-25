@@ -15,16 +15,30 @@ angular.module('makkyio')
           updated_at: "2014/03/29"
           created_at: "2014/03/15"
         }
-        # {
-        #   name: "hexadecimal_generator"
-        #   title: "Hexadecimal Generator"
-        #   link_path: "#/tool/hexadecimal_generator"
-        #   image_path: "image/tool/hexadecimal_generator.png"
-        #   tags: [""]
-        #   description: ""
-        #   updated_at: ""
-        #   created_at: ""
-        # }
+        {
+          name: "hexadecimal_generator"
+          title: "Hexadecimal Generator"
+          link_path: "#/tool/hexadecimal_generator"
+          image_path: "image/tool/hexadecimal_generator.png"
+          app_path: ""
+          live_path: ""
+          tags: [""]
+          description: "This is how to become a Hacker."
+          updated_at: ""
+          created_at: ""
+        }
+        {
+          name: "amenimo_webfont"
+          title: "雨にも負けず(WebFont)"
+          link_path: "#/tool/amenimo_webfont"
+          image_path: "image/tool/amenimo_webfont.png"
+          app_path: ""
+          live_path: ""
+          tags: [""]
+          description: "WebFontのお試し"
+          updated_at: ""
+          created_at: ""
+        }
       ]
     return tools
   )
@@ -37,7 +51,7 @@ angular.module('makkyio')
           title: "BeefClicker"
           tags: [""]
           detail_path: "#/portfolio/webapp/beef_clicker"
-          blog_path: ""
+          blog_path: "http://blog.makkysnote.org/archives/430"
           live_path: ""
           git_path: "https://github.com/kuradai/BeefClicker"
           image_path: "image/portfolio/beef_clicker_1.png"
@@ -46,7 +60,23 @@ angular.module('makkyio')
           updated_at: "2013/08/23"
           created_at: "2013/11/01"
         }
-
       ]
-    return {webapp: _webapp}
+    _website =
+      [
+        {
+          name: "kasuga14_freshman"
+          title: "春日地区新入生歓迎会2014"
+          tags: [""]
+          detail_path: "#/portfolio/website/kasuga14_freshman"
+          blog_path: ""
+          live_path: "http://www.stb.tsukuba.ac.jp/~kasuga-campus/shinkan/"
+          git_path: "https://github.com/kuradai/kasuga14_freshman"
+          image_path: "image/portfolio/kasuga14_freshman.png"
+          images_path: ""
+          description: "2014年度の筑波大学 春日地区新入生歓迎会のWebサイトです。"
+          updated_at: "2014/04/13"
+          created_at: "2014/03/24"
+        }
+      ]
+    return {webapp: _webapp, website: _website}
   )

@@ -37,28 +37,27 @@ angular
         templateUrl: 'views/tool_detail.html'
         controller: 'ToolDetailCtrl'
       })
-
       .state('/tool/:tool_name/live', {
         url: "/tool/:tool_name/live"
         templateUrl: 'app/microphone_visualizer.html'
       })
-      # .when('/portfolio', {
-      #   templateUrl: 'views/portfolio.html',
-      #   controller: 'PortfolioCtrl'
-      # })
-      # .when('/portfolio/:portfolio_type/:portfolio_name', {
-      #   templateUrl: 'views/portfolio_detail.html',
-      #   controller: 'PortfolioDetailCtrl'
-      # })
 
-      # .when('/about', {
-      #   templateUrl: 'views/about.html',
-      #   controller: 'AboutCtrl'
-      # })
+      .state('/portfolio', {
+        url: '/portfolio'
+        templateUrl: 'views/portfolio.html'
+        controller: 'PortfolioCtrl'
+      })
+      .state('/portfolio/:portfolio_type/:portfolio_name', {
+        url: '/portfolio/:portfolio_type/:portfolio_name'
+        templateUrl: 'views/portfolio_detail.html'
+        controller: 'PortfolioDetailCtrl'
+      })
 
-      # .otherwise({
-      #   redirectTo: '/'
-      # });
+      .state('/about', {
+        url: "/about"
+        templateUrl: 'views/about.html'
+        controller: 'AboutCtrl'
+      })
   )
 
   .config(($analyticsProvider) ->

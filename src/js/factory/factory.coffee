@@ -37,7 +37,7 @@ angular.module('makkyio')
           title: "BeefClicker"
           tags: [""]
           detail_path: "#/portfolio/webapp/beef_clicker"
-          blog_path: ""
+          blog_path: "http://blog.makkysnote.org/archives/430"
           live_path: ""
           git_path: "https://github.com/kuradai/BeefClicker"
           image_path: "image/portfolio/beef_clicker_1.png"

@@ -20,7 +20,8 @@
     "jquery": "~2.1.0",
     "font-awesome": "~4.0.3",
     "angular": "~1.2.16",
-    "angular-ui-router": "~0.2.10"
+    "angular-ui-router": "~0.2.10",
+    "angulartics": "~0.15.18"
   },
   "exportsOverride": {
     "bootstrap": {
@@ -41,6 +42,9 @@
     },
     "angular-ui-router": {
       "js": "release/angular-ui-router.min.js"
+    },
+    "angulartics": {
+      "js": ["dist/angulartics.min.js", "dist/angulartics-ga.min.js"]
     }
   }
 }

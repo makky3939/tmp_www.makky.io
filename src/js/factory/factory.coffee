@@ -11,20 +11,20 @@ angular.module('makkyio')
           app_path: "app/microphone_visualizer.html"
           live_path: "#/tool/microphone_visualizer/live"
           tags: [""]
-          description: ""
+          description: "Web Audio APIで取得したマイクの音を用いて、Canvasのアニメーションを描画します。Web Audio APIをサポートしているブラウザからご利用下さい。"
           updated_at: "2014/03/29"
           created_at: "2014/03/15"
         }
-        {
-          name: "hexadecimal_generator"
-          title: "Hexadecimal Generator"
-          link_path: "#/tool/hexadecimal_generator"
-          image_path: "image/tool/hexadecimal_generator.png"
-          tags: [""]
-          description: ""
-          updated_at: ""
-          created_at: ""
-        }
+        # {
+        #   name: "hexadecimal_generator"
+        #   title: "Hexadecimal Generator"
+        #   link_path: "#/tool/hexadecimal_generator"
+        #   image_path: "image/tool/hexadecimal_generator.png"
+        #   tags: [""]
+        #   description: ""
+        #   updated_at: ""
+        #   created_at: ""
+        # }
       ]
     return tools
   )

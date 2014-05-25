@@ -1,5 +1,8 @@
 .container.tool_detail
-  h1 Tool/{{tool.title}}
+  h1 
+    a(href="#/tool") Tool
+    |/{{tool.title}}
+
   .col-md-12.page-section
     .col-md-9
       p.description {{tool.description}}

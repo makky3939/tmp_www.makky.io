@@ -53,9 +53,9 @@ angular.module('makkyio')
           name: "kasuga14_freshman"
           title: "春日地区新入生歓迎会2014"
           tags: [""]
-          detail_path: "#/portfolio/webapp/kasuga14_freshman"
+          detail_path: "#/portfolio/website/kasuga14_freshman"
           blog_path: ""
-          live_path: ""
+          live_path: "http://www.stb.tsukuba.ac.jp/~kasuga-campus/shinkan/"
           git_path: "https://github.com/kuradai/kasuga14_freshman"
           image_path: "image/portfolio/kasuga14_freshman.png"
           images_path: ""

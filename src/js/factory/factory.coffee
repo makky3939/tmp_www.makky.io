@@ -15,16 +15,30 @@ angular.module('makkyio')
           updated_at: "2014/03/29"
           created_at: "2014/03/15"
         }
-        # {
-        #   name: "hexadecimal_generator"
-        #   title: "Hexadecimal Generator"
-        #   link_path: "#/tool/hexadecimal_generator"
-        #   image_path: "image/tool/hexadecimal_generator.png"
-        #   tags: [""]
-        #   description: ""
-        #   updated_at: ""
-        #   created_at: ""
-        # }
+        {
+          name: "hexadecimal_generator"
+          title: "Hexadecimal Generator"
+          link_path: "#/tool/hexadecimal_generator"
+          image_path: "image/tool/hexadecimal_generator.png"
+          app_path: ""
+          live_path: ""
+          tags: [""]
+          description: "This is how to become a Hacker."
+          updated_at: ""
+          created_at: ""
+        }
+        {
+          name: "amenimo_webfont"
+          title: "雨にも負けず(WebFont)"
+          link_path: "#/tool/amenimo_webfont"
+          image_path: "image/tool/amenimo_webfont.png"
+          app_path: ""
+          live_path: ""
+          tags: [""]
+          description: "WebFontのお試し"
+          updated_at: ""
+          created_at: ""
+        }
       ]
     return tools
   )

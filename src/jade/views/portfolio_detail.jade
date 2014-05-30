@@ -2,30 +2,31 @@
   h1
     a(href="#/portfolio") Portfolio
     |/{{portfolio.title}}
-  
-  .col-md-12.page-section
-    .col-md-9
-      p.description {{portfolio.description}}
-    .col-md-3
-      p 作成日:{{portfolio.created_at}}
-      p 更新日:{{portfolio.updated_at}}
-      p タグ:{{tags}}
+  .panel.panel-default
+    .panel-body  
+      .col-md-12.page-section
+        .col-md-9
+          p.description {{portfolio.description}}
+        .col-md-3
+          p 作成日:{{portfolio.created_at}}
+          p 更新日:{{portfolio.updated_at}}
+          p タグ:{{tags}}
 
-  .col-md-12.page-section
-    .col-md-9
-      img.image(src= "{{portfolio.image_path}}")
-    .col-md-3
-      .col-md-12(ng-repeat= "image in portfolio.images_path")
-        img.image(src= "{{image}}")
+      .col-md-12.page-section
+        .col-md-9
+          img.image(src= "{{portfolio.image_path}}")
+        .col-md-3
+          .col-md-12(ng-repeat= "image in portfolio.images_path")
+            img.image(src= "{{image}}")
 
-  .col-md-12.page-section
-    a.btn.btn-success.col-md-3.btn-lg(href="{{portfolio.blog_path}}", ng-Show="{{portfolio.blog_path}}", target="_blank")
-      i.fa.fa-calendar
-      |Blog
-    a.btn.btn-default.col-md-3.btn-lg(href="{{portfolio.git_path}}", ng-Show="{{portfolio.git_path}}", target="_blank")
-      i.fa.fa-github
-      |Git
-    a.btn.btn-default.col-md-3.btn-lg(href="{{portfolio.live_path}}", ng-Show="{{portfolio.live_path}}", target="_blank")
-      i.fa.fa-play-circle
-      |Live
+      .col-md-12
+        a.btn.btn-success.col-md-3.btn-lg(href="{{portfolio.blog_path}}", ng-Show="{{portfolio.blog_path}}", target="_blank")
+          i.fa.fa-calendar
+          |Blog
+        a.btn.btn-default.col-md-3.btn-lg(href="{{portfolio.git_path}}", ng-Show="{{portfolio.git_path}}", target="_blank")
+          i.fa.fa-github
+          |Git
+        a.btn.btn-default.col-md-3.btn-lg(href="{{portfolio.live_path}}", ng-Show="{{portfolio.live_path}}", target="_blank")
+          i.fa.fa-play-circle
+          |Live
 

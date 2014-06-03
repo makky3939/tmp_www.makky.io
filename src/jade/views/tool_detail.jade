@@ -16,6 +16,12 @@
         img(ng-src="{{tool.image_path}}")
 
       .col-md-12
-        a.btn.btn-default.col-md-3.btn-lg(href="{{tool.live_path}}", ng-Show="{{portfolio.blog_path}}", target="_brank")
+        a.btn.btn-success.col-md-3.btn-lg(href="{{tool.blog_path}}", ng-Show="{{tool.blog_path}}", target="_blank")
+          i.fa.fa-calendar
+          |Blog
+        a.btn.btn-default.col-md-3.btn-lg(href="{{tool.git_path}}", ng-Show="{{tool.git_path}}", target="_blank")
+          i.fa.fa-github
+          |Git
+        a.btn.btn-default.col-md-3.btn-lg(href="{{tool.live_path}}", ng-Show="{{tool.live_path}}", target="_blank")
           i.fa.fa-play-circle
           |Live

@@ -25,9 +25,6 @@ module.exports = (grunt) ->
           port: "3939"
           base: "dst"
           livereload: 35729
-      livereload:
-        options:
-          open: true
 
     autoprefixer:
       options:

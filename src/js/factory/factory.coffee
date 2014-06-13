@@ -76,6 +76,34 @@ angular.module('makkyio')
           description: "2014年度の筑波大学 春日地区新入生歓迎会のWebサイトです。"
           updated_at: "2014/04/13"
           created_at: "2014/03/24"
+        },
+        {
+          name: "shinsai_kangaeru"
+          title: "震災について考えるサイト"
+          tags: [""]
+          detail_path: "#/portfolio/website/shinsai_kangaeru"
+          blog_path: ""
+          live_path: "http://sinsai-kangaeru.jp/"
+          git_path: ""
+          image_path: "image/portfolio/shinsai_kangaeru_1.png"
+          images_path: ["image/portfolio/shinsai_kangaeru_2.png", "image/portfolio/shinsai_kangaeru_3.png"]
+          description: "地震や放射線に関する調査や活動についてまとめたWebサイトです。 第15回 全日本中学高校Webコンテスト ThinkQuest JAPANにおいて、プラチナ賞とYahoo!基金特別賞を受賞しました。"
+          updated_at: "2013/01/11"
+          created_at: "2012/04/01"
+        },
+        {
+          name: "zishinn_kangaeru"
+          title: "震災について考えるサイト"
+          tags: [""]
+          detail_path: "#/portfolio/website/zishinn_kangaeru"
+          blog_path: ""
+          live_path: "http://zisinn-kangaeru.makkysnote.org"
+          git_path: ""
+          image_path: "image/portfolio/zishinn_kangaeru_1.png"
+          images_path: ["image/portfolio/zishinn_kangaeru_2.png", "image/portfolio/zishinn_kangaeru_3.png"]
+          description: "地震に関する調査や活動についてまとめたWebサイトです。 第11回高校生ホームページコンテストにおいて、準グランプリを受賞しました。"
+          updated_at: "2013/01/20"
+          created_at: "2012/07/01"
         }
       ]
     return {webapp: _webapp, website: _website}

@@ -37,9 +37,14 @@ angular
         templateUrl: 'views/tool_detail.html'
         controller: 'ToolDetailCtrl'
       })
-      .state('/tool/:tool_name/live', {
-        url: "/tool/:tool_name/live"
+      .state('/tool/microphone_visualizer/live', {
+        url: "/tool/microphone_visualizer/live"
         templateUrl: 'app/microphone_visualizer.html'
+      })
+
+      .state('/tool/pon_de_maccha/live', {
+        url: "/tool/pon_de_maccha/live"
+        templateUrl: 'app/pon_de_maccha.html'
       })
 
       .state('/portfolio', {

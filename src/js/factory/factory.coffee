@@ -4,6 +4,18 @@ angular.module('makkyio')
     tools = 
       [
         {
+          name: "pon_de_maccha"
+          title: "ポン・デ・抹茶チョコ"
+          link_path: "#/tool/pon_de_maccha"
+          image_path: "image/tool/pon_de_maccha.png"
+          app_path: "app/pon_de_maccha.html"
+          live_path: "#/tool/pon_de_maccha/live"
+          tags: [""]
+          description: "SVGでポン・デ・抹茶チョコを描画してみました。"
+          updated_at: "2014/06/22"
+          created_at: "2014/06/22"
+        }
+        {
           name: "microphone_visualizer"
           title: "Microphone Visualizer"
           link_path: "#/tool/microphone_visualizer"

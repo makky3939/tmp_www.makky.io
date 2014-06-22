@@ -42,9 +42,9 @@ angular
         templateUrl: 'app/microphone_visualizer.html'
       })
 
-      .state('/tool/pon_de_maccha/live', {
-        url: "/tool/pon_de_maccha/live"
-        templateUrl: 'app/pon_de_maccha.html'
+      .state('/tool/pon_de_matcha/live', {
+        url: "/tool/pon_de_matcha/live"
+        templateUrl: 'app/pon_de_matcha.html'
       })
 
       .state('/portfolio', {

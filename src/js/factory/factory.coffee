@@ -4,12 +4,12 @@ angular.module('makkyio')
     tools = 
       [
         {
-          name: "pon_de_maccha"
+          name: "pon_de_matcha"
           title: "ポン・デ・抹茶チョコ"
-          link_path: "#/tool/pon_de_maccha"
-          image_path: "image/tool/pon_de_maccha.png"
-          app_path: "app/pon_de_maccha.html"
-          live_path: "#/tool/pon_de_maccha/live"
+          link_path: "#/tool/pon_de_matcha"
+          image_path: "image/tool/pon_de_matcha.png"
+          app_path: "app/pon_de_matcha.html"
+          live_path: "#/tool/pon_de_matcha/live"
           tags: [""]
           description: "SVGでポン・デ・抹茶チョコを描画してみました。"
           updated_at: "2014/06/22"

@@ -43,7 +43,9 @@ gulp.task 'sass', ->
   gulp.src ['src/sass/*.sass', 'src/sass/styles/*.sass']
     .pipe plumber()
     .pipe concat 'style.sass'
-    .pipe sass()
+    .pipe sass
+      compass: true
+      bundleExec:true
     .pipe prefixer 'last 3 version'
     .pipe mincss()
     .pipe plumber.stop()

@@ -1,6 +1,21 @@
 {
-  "name": "Makky.io",
-  "version": "0.0.1",
-  "devDependencies": {
-  }
+  "name": "makky.io",
+  "version": "0.0.0",
+  "description": "http://makky.io",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/makky3939/makky.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/makky3939/makky.io/issues"
+  },
+  "homepage": "https://github.com/makky3939/makky.io"
 }

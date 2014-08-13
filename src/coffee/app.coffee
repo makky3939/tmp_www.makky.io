@@ -12,12 +12,15 @@
   a.async = 1
   a.src = g
   m.parentNode.insertBefore a, m
-) window, document, "script", "http://www.google-analytics.com/analytics.js", "ga"
+) window, document, "script", "http://www.google-analytics.com/analytics.js",
+"ga"
 ga "create", "UA-47562530-1", "makky.io"
 
 # Angular App
 angular
-  .module('makkyio', ['ui.router', 'angulartics', 'angulartics.google.analytics'])
+  .module('makkyio',
+    ['ui.router', 'angulartics', 'angulartics.google.analytics']
+  )
   .config(($stateProvider, $urlRouterProvider) ->
     $urlRouterProvider.otherwise "/"
     $stateProvider

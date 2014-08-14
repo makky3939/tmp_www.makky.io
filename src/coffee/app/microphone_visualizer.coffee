@@ -1,4 +1,8 @@
-window.AudioContext = window.AudioContext || window.webkitAudioContext || window.mozAudioContext || window.msAudioContext
+window.AudioContext =
+  window.AudioContext ||
+  window.webkitAudioContext ||
+  window.mozAudioContext ||
+  window.msAudioContext
 audioContext = new AudioContext()
 body = document.getElementById 'microphone_visualizer'
 canvas = document.getElementById 'micCanvas'
@@ -50,7 +54,9 @@ gainNode.gain.value = 0
     ctx.stroke()
 
     ctx.beginPath()
-    ctx.arc(width/2, height/2, height/8, (Math.PI/180)*0, (Math.PI/180)*360, false)
+    ctx.arc(
+      width/2, height/2, height/8, (Math.PI/180)*0, (Math.PI/180)*360, false
+    )
     ctx.fill()
 
     for i in [0..data.length]

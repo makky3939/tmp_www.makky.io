@@ -1,6 +1,6 @@
 {
   "name": "Makky.io",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "authors": [
     "Makky"
   ],
@@ -18,10 +18,10 @@
   "devDependencies": {
     "bootstrap": "~3.1.1",
     "jquery": "~2.1.0",
-    "font-awesome": "~4.0.3",
     "angular": "~1.2.16",
     "angular-ui-router": "~0.2.10",
-    "angulartics": "~0.15.18"
+    "angulartics": "~0.15.18",
+    "fontawesome": "~4.1.0"
   },
   "exportsOverride": {
     "bootstrap": {
@@ -32,10 +32,6 @@
     "jquery": {
       "js": "dist/jquery.min.js"
     },
-    "font-awesome": {
-      "css": "css/font-awesome.min.css",
-      "fonts": "fonts/*"
-    },
     "angular": {
       "js": "angular.min.js",
       "css": "angular-csp.css"
@@ -44,7 +40,11 @@
       "js": "release/angular-ui-router.min.js"
     },
     "angulartics": {
-      "js": ["dist/angulartics.min.js", "dist/angulartics-ga.min.js"]
+      "js": [
+        "dist/angulartics.min.js",
+        "dist/angulartics-ga.min.js"
+      ]
     }
-  }
+  },
+  "dependencies": {}
 }

@@ -1,7 +1,7 @@
 'use strict'
 angular.module('makkyio')
   .factory('ToolModel', () ->
-    tools = 
+    tools =
       [
         {
           name: "pon_de_matcha"
@@ -23,7 +23,9 @@ angular.module('makkyio')
           app_path: "app/microphone_visualizer.html"
           live_path: "#/tool/microphone_visualizer/live"
           tags: [""]
-          description: "Web Audio APIで取得したマイクの音を用いて、Canvasのアニメーションを描画します。Web Audio APIをサポートしているブラウザからご利用下さい。"
+          description:
+            "Web Audio APIで取得したマイクの音を用いて、Canvasのアニメーションを描画します。
+            Web Audio APIをサポートしているブラウザからご利用下さい。"
           updated_at: "2014/03/29"
           created_at: "2014/03/15"
         }
@@ -56,7 +58,7 @@ angular.module('makkyio')
   )
 
   .factory('PortfolioModel', () ->
-    _webapp = 
+    _webapp =
       [
         {
           name: "beef_clicker"
@@ -67,8 +69,16 @@ angular.module('makkyio')
           live_path: ""
           git_path: "https://github.com/kuradai/BeefClicker"
           image_path: "image/portfolio/beef_clicker_1.png"
-          images_path: ["image/portfolio/beef_clicker_2.png", "image/portfolio/beef_clicker_3.png", "image/portfolio/beef_clicker_4.png"]
-          description: "第39回 筑波大学 雙峰祭において、春日地区クラス代表者会議が出店したお店の売り上げカウンターアプリです。Ruby on Rails4を用いて開発しました。売り上げデータはSQLite3で扱い、WebSocketを用いて閲覧中の他のユーザにもリアルタイムに売上個数を共有することが出来ます。GoogleChartsを用いてグラフを作成することも出来ます。"
+          images_path: [
+            "image/portfolio/beef_clicker_2.png",
+            "image/portfolio/beef_clicker_3.png",
+            "image/portfolio/beef_clicker_4.png"
+          ]
+          description:
+            "第39回 筑波大学 雙峰祭において、春日地区クラス代表者会議が出店したお店の売り上げカウンターアプリです。
+            Ruby on Rails4を用いて開発しました。
+            売り上げデータはSQLite3で扱い、WebSocketを用いて閲覧中の他のユーザにもリアルタイムに売上個数を共有することが出来ます。
+            GoogleChartsを用いてグラフを作成することも出来ます。"
           updated_at: "2013/08/23"
           created_at: "2013/11/01"
         }
@@ -98,8 +108,13 @@ angular.module('makkyio')
           live_path: "http://sinsai-kangaeru.jp/"
           git_path: ""
           image_path: "image/portfolio/shinsai_kangaeru_1.png"
-          images_path: ["image/portfolio/shinsai_kangaeru_2.png", "image/portfolio/shinsai_kangaeru_3.png"]
-          description: "地震や放射線に関する調査や活動についてまとめたWebサイトです。 第15回 全日本中学高校Webコンテスト ThinkQuest JAPANにおいて、プラチナ賞とYahoo!基金特別賞を受賞しました。"
+          images_path: [
+            "image/portfolio/shinsai_kangaeru_2.png",
+            "image/portfolio/shinsai_kangaeru_3.png"
+          ]
+          description:
+            "地震や放射線に関する調査や活動についてまとめたWebサイトです。
+            第15回 全日本中学高校Webコンテスト ThinkQuest JAPANにおいて、プラチナ賞とYahoo!基金特別賞を受賞しました。"
           updated_at: "2013/01/11"
           created_at: "2012/04/01"
         },
@@ -112,8 +127,13 @@ angular.module('makkyio')
           live_path: "http://zisinn-kangaeru.makkysnote.org"
           git_path: ""
           image_path: "image/portfolio/zishinn_kangaeru_1.png"
-          images_path: ["image/portfolio/zishinn_kangaeru_2.png", "image/portfolio/zishinn_kangaeru_3.png"]
-          description: "地震に関する調査や活動についてまとめたWebサイトです。 第11回高校生ホームページコンテストにおいて、準グランプリを受賞しました。"
+          images_path: [
+            "image/portfolio/zishinn_kangaeru_2.png",
+            "image/portfolio/zishinn_kangaeru_3.png"
+          ]
+          description:
+            "地震に関する調査や活動についてまとめたWebサイトです。
+            第11回高校生ホームページコンテストにおいて、準グランプリを受賞しました。"
           updated_at: "2013/01/20"
           created_at: "2012/07/01"
         }

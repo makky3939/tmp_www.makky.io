@@ -26,18 +26,18 @@ angular
     $stateProvider
       .state('/', {
         url: "/",
-        templateUrl: "views/index.html"
+        templateUrl: "view/index.html"
         controller: 'IndexCtrl'
       })
 
       .state('/tool', {
         url: "/tool"
-        templateUrl: 'views/tool.html'
+        templateUrl: 'view/tool.html'
         controller: 'ToolCtrl'
       })
       .state('/tool/:tool_name', {
         url: "/tool/:tool_name"
-        templateUrl: 'views/tool_detail.html'
+        templateUrl: 'view/tool_detail.html'
         controller: 'ToolDetailCtrl'
       })
       .state('/tool/microphone_visualizer/live', {
@@ -52,18 +52,18 @@ angular
 
       .state('/portfolio', {
         url: '/portfolio'
-        templateUrl: 'views/portfolio.html'
+        templateUrl: 'view/portfolio.html'
         controller: 'PortfolioCtrl'
       })
       .state('/portfolio/:portfolio_type/:portfolio_name', {
         url: '/portfolio/:portfolio_type/:portfolio_name'
-        templateUrl: 'views/portfolio_detail.html'
+        templateUrl: 'view/portfolio_detail.html'
         controller: 'PortfolioDetailCtrl'
       })
 
       .state('/about', {
         url: "/about"
-        templateUrl: 'views/about.html'
+        templateUrl: 'view/about.html'
         controller: 'AboutCtrl'
       })
   )

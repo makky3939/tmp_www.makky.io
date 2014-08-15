@@ -136,6 +136,25 @@ angular.module('makkyio')
             第11回高校生ホームページコンテストにおいて、準グランプリを受賞しました。"
           updated_at: "2013/01/20"
           created_at: "2012/07/01"
+        },
+        {
+          name: "mth"
+          title: "水戸工業高等学校Webサイト"
+          tags: [""]
+          detail_path: "#/portfolio/website/mth"
+          blog_path: ""
+          live_path: "http://www.mito-th.ed.jp"
+          git_path: ""
+          image_path: "image/portfolio/mth_1.png"
+          images_path: [
+            "image/portfolio/mth_2.png",
+            "image/portfolio/mth_3.png"
+          ]
+          description:
+            "茨城県立水戸工業高等学校のWebサイトです。
+            既存の機能の改善や新機能の実装、Webサイト全体のHTML5化に貢献しました。"
+          updated_at: "2011/010/1"
+          created_at: "2013/03/01"
         }
       ]
     return {webapp: _webapp, website: _website}

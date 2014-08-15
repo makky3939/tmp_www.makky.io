@@ -9,6 +9,11 @@ angular.module('makkyio')
       $scope.activeTab = path
   )
 
+  .controller('ScrollTopCtrl', ($scope) ->
+    $scope.top = () ->
+      window.scrollTo(0, 0)
+  )
+
   # Index
   .controller('IndexCtrl', ($scope) ->
   )

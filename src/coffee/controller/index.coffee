@@ -33,6 +33,9 @@ angular.module('makkyio')
 
     $scope.changeImage = (index) ->
       $scope.centerImage = $scope.portfolio.image_path[index]
+
+    $scope.isActive = (index) ->
+      return $scope.centerImage == $scope.portfolio.image_path[index]
   )
 
   # About

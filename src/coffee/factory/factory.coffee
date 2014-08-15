@@ -109,6 +109,27 @@ angular.module('makkyio')
           created_at: "2014/03/24"
         },
         {
+          name: "kasuga"
+          title: "春日地区クラス代表者会議Webサイト"
+          tags: [""]
+          detail_path: "#/portfolio/website/kasuga"
+          blog_path: ""
+          live_path: "http://www.stb.tsukuba.ac.jp/~kasuga-campus"
+          git_path: "https://github.com/kuradai/kasuga"
+          image_path: [
+            "image/portfolio/kasuga_1.png"
+            "image/portfolio/kasuga_2.png"
+            "image/portfolio/kasuga_3.png"
+          ]
+          description:
+            "春日地区クラス代表者会議のWebサイトです。
+            サイト全体のHTML5化と要素の分割によりメンテナンス性を向上させました。
+            jsonを提供するサーバと連動し、意見箱の画像データを提供する機能を実装しました。
+            "
+          updated_at: "2013/012/01"
+          created_at: "2014/02/01"
+        },
+        {
           name: "shinsai_kangaeru"
           title: "震災について考えるサイト"
           tags: [""]

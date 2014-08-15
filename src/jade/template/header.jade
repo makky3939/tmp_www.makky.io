@@ -1,13 +1,24 @@
-//- .header.title
-//-   a(href = "/") Makky.io
-nav.navbar.navbar-inverse.navbar-fixed-top.header(role = "navigation")
+nav.navbar.navbar-inverse.navbar-fixed-top.header(role="navigation", ng-controller="HeaderCtrl")
   .container-fluid
     .navbar-header
-      button.navbar-toggle(type = "button", data-toggle = "collapse", data-target="#navbar-collapse-1")
+      button.navbar-toggle(type="button", data-toggle="collapse", data-target="#navbar-collapse-1")
         span.sr-only Toggle Navigation
         - for i in [,,,]
           span.icon-bar
 
     #navbar-collapse-1.collapse.navbar-collapse
       ul.nav.navbar-nav
-        include ../template/menu
+        li(ng-class="{active: isActive('index')}", ng-click="changeTab('index')")
+          a(href="#/index") Top
+        li(ng-class="{active: isActive('blog')}", ng-click="changeTab('blog')")
+          a(href="http://blog.makkysnote.org", target="_brank") Blog
+        li(ng-class="{active: isActive('tool')}", ng-click="changeTab('tool')")
+          a(href="#/tool") Tool
+        li(ng-class="{active: isActive('portfolio')}", ng-click="changeTab('portfolio')")
+          a(href="#/portfolio") Portfolio
+        li(ng-class="{active: isActive('photo')}", ng-click="changeTab('photo')")
+          a(href="https://plus.google.com/u/0/photos/103944930745515141285/albums", target="_brank") Picture
+        li(ng-class="{active: isActive('about')}", ng-click="changeTab('about')")
+          a(href="#/about") About
+        li(ng-class="{active: isActive('contact')}", ng-click="changeTab('contact')")
+          a(href="http://blog.makkysnote.org/contact/", target="_brank") Contact

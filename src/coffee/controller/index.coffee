@@ -1,5 +1,14 @@
 'use strict'
 angular.module('makkyio')
+  .controller('HeaderCtrl', ($scope, $location) ->
+    $scope.activeTab = $location.$$path.split('/')[1] || 'index'
+    $scope.isActive = (path) ->
+      return $scope.activeTab == path
+
+    $scope.changeTab = (path) ->
+      $scope.activeTab = path
+  )
+
   # Index
   .controller('IndexCtrl', ($scope) ->
   )

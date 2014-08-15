@@ -1,5 +1,5 @@
 .scroll-top-button(ng-controller="ScrollTopCtrl")
-  a(ng-click="top()") Top
+  a(ng-click="top()", ng-class="{hide: isHide}") Top
 
 nav.navbar.navbar-inverse.footer_menu
   .container-fluid

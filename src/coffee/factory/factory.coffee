@@ -117,7 +117,7 @@ angular.module('makkyio')
           live_path: "http://sinsai-kangaeru.jp/"
           git_path: ""
           image_path: [
-            "image/portfolio/shinsai_kangaeru_1.png"
+            "image/portfolio/shinsai_kangaeru_1.png",
             "image/portfolio/shinsai_kangaeru_2.png",
             "image/portfolio/shinsai_kangaeru_3.png"
           ]

@@ -13,7 +13,7 @@
           p タグ:{{tags}}
 
       .col-md-12.page-section
-        img(ng-src="{{tool.image_path}}")
+        img(ng-src="{{tool.image_path[0]}}")
 
       .col-md-12
         a.btn.btn-success.col-md-3.btn-lg(href="{{tool.blog_path}}", ng-Show="{{tool.blog_path}}", target="_blank")

@@ -7,7 +7,7 @@
       .panel.panel-default
         .panel-body
           h4 {{item.title}}
-          img(src = "{{item.image_path}}")
+          img(ng-src = "{{item.image_path[0]}}")
         .panel-footer
           a(href= "{{item.detail_path}}") Detail
 
@@ -17,77 +17,6 @@
       .panel.panel-default
         .panel-body
           h4 {{item.title}}
-          img(src = "{{item.image_path}}")
+          img(ng-src = "{{item.image_path[0]}}")
         .panel-footer
           a(href= "{{item.detail_path}}") Detail
-
-//- .container.portfolio
-//-   h2 WebApp
-//-   a(href = "#").col-md-4
-//-     .panel.panel-default
-//-       .panel-body
-//-         h4 Hexadecimal Generator
-//-         img(src = "image/tool/hexadecimal_generator.png")
-
-//-   a(href = "#").col-md-4
-//-     .panel.panel-default
-//-       .panel-body
-//-         h4 Canvas Wave
-//-         img(src = "image/tool/canvas_wave.png")
-
-//-   a(href = "#").col-md-4
-//-     .panel.panel-default
-//-       .panel-body
-//-         h4 Canvas Clock
-//- .container.portfolio
-//-   h2 WebSite
-//-   a(href = "#").col-md-4
-//-     .panel.panel-default
-//-       .panel-body
-//-         h4 Hexadecimal Generator
-//-         img(src = "image/tool/hexadecimal_generator.png")
-
-//-   a(href = "#").col-md-4
-//-     .panel.panel-default
-//-       .panel-body
-//-         h4 Canvas Wave
-//-         img(src = "image/tool/canvas_wave.png")
-
-//-   a(href = "#").col-md-4
-//-     .panel.panel-default
-//-       .panel-body
-//-         h4 Canvas Clock
-//- .container.portfolio
-//-   h2 Streetview
-//-   a(href = "#").col-md-2
-//-     .panel.panel-default
-//-       .panel-body
-//-         h4 Hexadecimal Generator
-//-         img(src = "image/tool/hexadecimal_generator.png")
-
-//-   a(href = "#").col-md-2
-//-     .panel.panel-default
-//-       .panel-body
-//-         h4 Canvas Wave
-//-         img(src = "image/tool/canvas_wave.png")
-
-//-   a(href = "#").col-md-2
-//-     .panel.panel-default
-//-       .panel-body
-//-         h4 Canvas Clock
-//-   a(href = "#").col-md-2
-//-     .panel.panel-default
-//-       .panel-body
-//-         h4 Hexadecimal Generator
-//-         img(src = "image/tool/hexadecimal_generator.png")
-
-//-   a(href = "#").col-md-2
-//-     .panel.panel-default
-//-       .panel-body
-//-         h4 Canvas Wave
-//-         img(src = "image/tool/canvas_wave.png")
-
-//-   a(href = "#").col-md-2
-//-     .panel.panel-default
-//-       .panel-body
-//-         h4 Canvas Clock

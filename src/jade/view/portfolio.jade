@@ -1,22 +1,32 @@
 .container.portfolio
-  h1 Portfolio
+  h1
+    i.fa.fa-angle-right.portfolio_header_icon
+    |Portfolio
 
-  .col-md-12
-    h2 WebApp
-    .col-md-6(ng-repeat= "item in portfolios.webapp")
-      .panel.panel-default
-        .panel-body
-          h4 {{item.title}}
-          img(ng-src = "{{item.image_path[0]}}")
-        .panel-footer
-          a(href= "{{item.detail_path}}") Detail
+  .row.col-md-12
+    .page-header
+      h2 WebApp
+    .row
+      .col-md-6(ng-repeat= "item in portfolios.webapp")
+        .panel.panel-default
+          .panel-body
+            h4 {{item.title}}
+            img(ng-src = "{{item.image_path[0]}}")
+          .panel-footer
+            a(href= "{{item.detail_path}}")
+              |Detail
+              i.fa.fa-angle-double-right
 
-  .col-md-12
-    h2 WebSite
-    .col-md-6(ng-repeat= "item in portfolios.website")
-      .panel.panel-default
-        .panel-body
-          h4 {{item.title}}
-          img(ng-src = "{{item.image_path[0]}}")
-        .panel-footer
-          a(href= "{{item.detail_path}}") Detail
+  .row.col-md-12
+    .page-header
+      h2 WebSite
+    .row
+      .col-md-6(ng-repeat= "item in portfolios.website")
+        .panel.panel-default
+          .panel-body
+            h4 {{item.title}}
+            img(ng-src = "{{item.image_path[0]}}")
+          .panel-footer
+            a(href= "{{item.detail_path}}")
+              |Detail
+              i.fa.fa-angle-double-right

@@ -2,112 +2,115 @@
 .header
   font-family:  Aldrich, 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif
 
-.title
-  padding: 24px 48px 8px 48px
-  a
-    font-size: 2.56em
-    padding: 6px
-    color: $Blue
-    transition: background .1s linear
-    &:hover
-      background: $Blue
-      text-decoration: none
-      color: $LightGray
+// .title
+//   padding: 24px 48px 8px 48px
+//   a
+//     font-size: 2.56em
+//     padding: 6px
+//     color: $Blue
+//     transition: background .1s linear
+//     &:hover
+//       background: $Blue
+//       text-decoration: none
+//       color: $LightGray
 
 .navvar
   border-radius: 0
 
-.navbar-inverse
-  background-color: $Blue
-  border-color: $Blue
-  border-radius: 0
-
-  .navbar-brand 
-    color: $LightGray
-    &:first-letter
-      color: $Blue
-
-  .navbar-brand:hover,
-  .navbar-brand:focus 
-    color: #fff
-    background-color: transparent
-
-  .navbar-text
-    color: $LightGray
-
-  .navbar-nav > li > a
-    color: $LightGray
-
-  .navbar-nav > li > a:hover,
-  .navbar-nav > li > a:focus
-    color: $DarkBlue
-    background-color: transparent
-
-  .navbar-nav > .active > a,
-  .navbar-nav > .active > a:hover,
-  .navbar-nav > .active > a:focus
-    color: $DarkBlue
-    background-color: #080808
-
-  .navbar-nav > .disabled > a,
-  .navbar-nav > .disabled > a:hover,
-  .navbar-nav > .disabled > a:focus
-    color: #444
-    background-color: transparent
-
-  .navbar-toggle
-    border-color: $LightGray
-
-  .navbar-toggle:hover,
-  .navbar-toggle:focus
+.header
+  &.navbar
+    margin: 0
+  &.navbar-inverse
     background-color: $LightGray
-    .icon-bar
-      background-color: $Blue
+    border: 0
+    border-bottom: 6px solid $Blue
 
-  .navbar-toggle .icon-bar
-    background-color: $LightGray
+    .navbar-brand 
+      color: $LightGray
+      &:first-letter
+        color: $Blue
 
-  .navbar-collapse,
-  .navbar-form
-    border-color: $LightGray
-
-  .navbar-nav > .open > a,
-  .navbar-nav > .open > a:hover,
-  .navbar-nav > .open > a:focus
-    color: #fff
-    background-color: #080808
-
-  .navbar-link
-    color: $LightGray
-
-  .navbar-link:hover
-    color: #fff
-
-@media (max-width: 767px)
-  .navbar-inverse
-    .navbar-nav .open .dropdown-menu > .dropdown-header
-      border-color: $LightGray
-
-    .navbar-nav .open .dropdown-menu .divider
-      background-color: $LightGray
-
-    .navbar-nav .open .dropdown-menu > li > a
-      color: #999
-
-    .navbar-nav .open .dropdown-menu > li > a:hover,
-    .navbar-nav .open .dropdown-menu > li > a:focus
+    .navbar-brand:hover,
+    .navbar-brand:focus 
       color: #fff
       background-color: transparent
 
-    .navbar-nav .open .dropdown-menu > .active > a,
-    .navbar-nav .open .dropdown-menu > .active > a:hover,
-    .navbar-nav .open .dropdown-menu > .active > a:focus
+    .navbar-text
+      color: $LightGray
+
+    .navbar-nav > li > a
+      color: $Blue
+
+    .navbar-nav > li > a:hover,
+    .navbar-nav > li > a:focus
+      color: $LightGray
+      background-color: $Blue
+
+    .navbar-nav > .active > a,
+    .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus
+      color: $DarkBlue
+      background-color: #080808
+
+    .navbar-nav > .disabled > a,
+    .navbar-nav > .disabled > a:hover,
+    .navbar-nav > .disabled > a:focus
+      color: #444
+      background-color: transparent
+
+    .navbar-toggle
+      border-color: $Blue
+
+    .navbar-toggle:hover,
+    .navbar-toggle:focus
+      background-color: $LightGray
+      .icon-bar
+        background-color: $Blue
+
+    .navbar-toggle .icon-bar
+      background-color: $Blue
+
+    .navbar-collapse,
+    .navbar-form
+      border-color: $LightGray
+
+    .navbar-nav > .open > a,
+    .navbar-nav > .open > a:hover,
+    .navbar-nav > .open > a:focus
       color: #fff
       background-color: #080808
 
-    .navbar-nav .open .dropdown-menu > .disabled > a,
-    .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-    .navbar-nav .open .dropdown-menu > .disabled > a:focus
-      color: #444
-      background-color: transparent
+    .navbar-link
+      color: $LightGray
+
+    .navbar-link:hover
+      color: #fff
+
+  @media (max-width: 767px)
+    .navbar-inverse
+      .navbar-nav .open .dropdown-menu > .dropdown-header
+        border-color: $LightGray
+
+      .navbar-nav .open .dropdown-menu .divider
+        background-color: $LightGray
+
+      .navbar-nav .open .dropdown-menu > li > a
+        color: #999
+
+      .navbar-nav .open .dropdown-menu > li > a:hover,
+      .navbar-nav .open .dropdown-menu > li > a:focus
+        color: #fff
+        background-color: transparent
+
+      .navbar-nav .open .dropdown-menu > .active > a,
+      .navbar-nav .open .dropdown-menu > .active > a:hover,
+      .navbar-nav .open .dropdown-menu > .active > a:focus
+        color: #fff
+        background-color: #080808
+
+      .navbar-nav .open .dropdown-menu > .disabled > a,
+      .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+      .navbar-nav .open .dropdown-menu > .disabled > a:focus
+        color: #444
+        background-color: transparent
 

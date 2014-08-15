@@ -7,7 +7,9 @@ angular.module('makkyio')
           name: "pon_de_matcha"
           title: "ポン・デ・抹茶チョコ"
           link_path: "#/tool/pon_de_matcha"
-          image_path: "image/tool/pon_de_matcha.png"
+          image_path: [
+            "image/tool/pon_de_matcha.png"
+          ]
           app_path: "app/pon_de_matcha.html"
           live_path: "#/tool/pon_de_matcha/live"
           tags: [""]
@@ -19,7 +21,9 @@ angular.module('makkyio')
           name: "microphone_visualizer"
           title: "Microphone Visualizer"
           link_path: "#/tool/microphone_visualizer"
-          image_path: "image/tool/microphone_visualizer.png"
+          image_path: [
+            "image/tool/microphone_visualizer.png"
+          ]
           app_path: "app/microphone_visualizer.html"
           live_path: "#/tool/microphone_visualizer/live"
           tags: [""]
@@ -33,7 +37,9 @@ angular.module('makkyio')
           name: "hexadecimal_generator"
           title: "Hexadecimal Generator"
           link_path: "#/tool/hexadecimal_generator"
-          image_path: "image/tool/hexadecimal_generator.png"
+          image_path: [
+            "image/tool/hexadecimal_generator.png"
+          ]
           app_path: ""
           live_path: ""
           tags: [""]
@@ -45,7 +51,9 @@ angular.module('makkyio')
           name: "amenimo_webfont"
           title: "雨にも負けず(WebFont)"
           link_path: "#/tool/amenimo_webfont"
-          image_path: "image/tool/amenimo_webfont.png"
+          image_path: [
+            "image/tool/amenimo_webfont.png"
+          ]
           app_path: ""
           live_path: ""
           tags: [""]
@@ -68,8 +76,8 @@ angular.module('makkyio')
           blog_path: "http://blog.makkysnote.org/archives/430"
           live_path: ""
           git_path: "https://github.com/kuradai/BeefClicker"
-          image_path: "image/portfolio/beef_clicker_1.png"
-          images_path: [
+          image_path: [
+            "image/portfolio/beef_clicker_1.png",
             "image/portfolio/beef_clicker_2.png",
             "image/portfolio/beef_clicker_3.png",
             "image/portfolio/beef_clicker_4.png"
@@ -93,11 +101,33 @@ angular.module('makkyio')
           blog_path: ""
           live_path: "http://www.stb.tsukuba.ac.jp/~kasuga-campus/shinkan/"
           git_path: "https://github.com/kuradai/kasuga14_freshman"
-          image_path: "image/portfolio/kasuga14_freshman.png"
-          images_path: ""
+          image_path: [
+            "image/portfolio/kasuga14_freshman.png"
+          ]
           description: "2014年度の筑波大学 春日地区新入生歓迎会のWebサイトです。"
           updated_at: "2014/04/13"
           created_at: "2014/03/24"
+        },
+        {
+          name: "kasuga"
+          title: "春日地区クラス代表者会議Webサイト"
+          tags: [""]
+          detail_path: "#/portfolio/website/kasuga"
+          blog_path: ""
+          live_path: "http://www.stb.tsukuba.ac.jp/~kasuga-campus"
+          git_path: "https://github.com/kuradai/kasuga"
+          image_path: [
+            "image/portfolio/kasuga_1.png"
+            "image/portfolio/kasuga_2.png"
+            "image/portfolio/kasuga_3.png"
+          ]
+          description:
+            "春日地区クラス代表者会議のWebサイトです。
+            サイト全体のHTML5化と要素の分割によりメンテナンス性を向上させました。
+            jsonを提供するサーバと連動し、意見箱の画像データを提供する機能を実装しました。
+            "
+          updated_at: "2013/012/01"
+          created_at: "2014/02/01"
         },
         {
           name: "shinsai_kangaeru"
@@ -107,8 +137,8 @@ angular.module('makkyio')
           blog_path: ""
           live_path: "http://sinsai-kangaeru.jp/"
           git_path: ""
-          image_path: "image/portfolio/shinsai_kangaeru_1.png"
-          images_path: [
+          image_path: [
+            "image/portfolio/shinsai_kangaeru_1.png",
             "image/portfolio/shinsai_kangaeru_2.png",
             "image/portfolio/shinsai_kangaeru_3.png"
           ]
@@ -126,8 +156,8 @@ angular.module('makkyio')
           blog_path: ""
           live_path: "http://zisinn-kangaeru.makkysnote.org"
           git_path: ""
-          image_path: "image/portfolio/zishinn_kangaeru_1.png"
-          images_path: [
+          image_path: [
+            "image/portfolio/zishinn_kangaeru_1.png",
             "image/portfolio/zishinn_kangaeru_2.png",
             "image/portfolio/zishinn_kangaeru_3.png"
           ]
@@ -136,6 +166,25 @@ angular.module('makkyio')
             第11回高校生ホームページコンテストにおいて、準グランプリを受賞しました。"
           updated_at: "2013/01/20"
           created_at: "2012/07/01"
+        },
+        {
+          name: "mth"
+          title: "水戸工業高等学校Webサイト"
+          tags: [""]
+          detail_path: "#/portfolio/website/mth"
+          blog_path: ""
+          live_path: "http://www.mito-th.ed.jp"
+          git_path: ""
+          image_path: [
+            "image/portfolio/mth_1.png",
+            "image/portfolio/mth_2.png",
+            "image/portfolio/mth_3.png"
+          ]
+          description:
+            "茨城県立水戸工業高等学校のWebサイトです。
+            既存の機能の改善や新機能の実装、Webサイト全体のHTML5化に貢献しました。"
+          updated_at: "2011/010/1"
+          created_at: "2013/03/01"
         }
       ]
     return {webapp: _webapp, website: _website}

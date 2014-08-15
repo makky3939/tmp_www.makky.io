@@ -14,14 +14,19 @@
   a
     text-decoration: none
 
-.portfolio_detail
+.portfolio-detail
   .image
     width: 100%
     height: auto
+  .portfolio-detail_mainimage,
+  .portfolio-detail_sideimage
+    border: 2px solid $Gray
+    border-radius: 2px
+  .portfolio-detail_sideimage
+    margin: 0 0 4px 0
+  .active
+    border: 2px solid $Blue !important
   i
     margin-right: 8px
   .description
     line-height: 1.6
-
-  .active
-    border: 2px solid $Blue

@@ -13,7 +13,7 @@ width = canvas.width = 1024
 height = canvas.height = 768
 
 analyser = audioContext.createAnalyser()
-gainNode = audioContext.createGainNode()
+gainNode = audioContext.createGain()
 
 filter = audioContext.createBiquadFilter()
 filter.type = 1

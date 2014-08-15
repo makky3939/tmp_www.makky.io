@@ -93,6 +93,11 @@ gulp.task 'jade', ->
     .pipe jade()
     .pipe plumber.stop()
     .pipe gulp.dest 'dst/view/'
+  gulp.src 'src/jade/app/*.jade'
+    .pipe plumber()
+    .pipe jade()
+    .pipe plumber.stop()
+    .pipe gulp.dest 'dst/app/'
 
 gulp.task 'livereload', ->
   gulp.src ''
@@ -123,4 +128,4 @@ gulp.task 'build', ->
 
 # Develop Task
 gulp.task 'server', ->
-  sequence 'build', ['watch', 'connect']
+  sequence 'build', ['connect', 'watch']

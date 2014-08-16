@@ -29,25 +29,28 @@ h5
   margin: 32px 0 16px
   border-bottom: 2px solid $Blue
 
-.author
-  margin: 16px auto
-  padding: 16px 0
-  border-bottom: 1px dashed #101010
-  p
-    font-size: 1.2em
-
 .logo
   img
     width: 100%
     height: auto
 
-.profile
-  margin: 16px 8px
-  padding: 16px 0
-  border-top: 1px dashed $Blue
-  border-bottom: 1px dashed $Blue
-
 .social
   margin: 8px 0 0 0
   i
     margin-right: 8px
+
+.scroll-top-button
+  z-index: 100
+  position: fixed
+  right: 24px
+  bottom: 100px
+  background: $Blue
+  border-radius: 4px
+  overflow: hidden
+  a
+    display: block
+    padding: 16px
+    color: $LightGray
+    &:hover
+      text-decoration: none
+      background: $DarkGray

@@ -17,6 +17,7 @@
     "gulp-minify-css": "^0.3.7",
     "gulp-plumber": "^0.6.4",
     "gulp-ruby-sass": "^0.7.1",
+    "gulp-webserver": "^0.8.7",
     "run-sequence": "^0.3.6"
   },
   "devDependencies": {},
@@ -27,8 +28,8 @@
     "type": "git",
     "url": "https://github.com/makky3939/makky.io.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "@_Makky_",
+  "license": "",
   "bugs": {
     "url": "https://github.com/makky3939/makky.io/issues"
   },

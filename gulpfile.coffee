@@ -5,13 +5,12 @@ clean      = require 'gulp-clean'
 coffee     = require 'gulp-coffee'
 coffeelint = require 'gulp-coffeelint'
 concat     = require 'gulp-concat'
-connect    = require 'gulp-connect-multi'
 jade       = require 'gulp-jade'
 mincss     = require 'gulp-minify-css'
 plumber    = require 'gulp-plumber'
 sass       = require 'gulp-ruby-sass'
+webserver  = require 'gulp-webserver'
 sequence   = require 'run-sequence'
-connect    = connect()
 
 gulp.task 'bower', ->
   bower.commands.install().on 'end', (installed) ->
@@ -70,13 +69,12 @@ gulp.task 'coffee', ->
     .pipe plumber.stop()
     .pipe gulp.dest 'dst/js/'
 
-gulp.task 'connect', connect.server({
-    root: ['dst']
-    port: 3939
-    livereload: true
-    open:
-      browser: 'Google Chrome Canary'
-  })
+gulp.task 'webserver', ->
+  gulp.src '.'
+    .pipe webserver {
+      host: '0.0.0.0'
+      port: 3939
+    }
 
 gulp.task 'copy', ->
   gulp.src 'src/image/**', {base: 'src/image'}
@@ -99,17 +97,11 @@ gulp.task 'jade', ->
     .pipe plumber.stop()
     .pipe gulp.dest 'dst/app/'
 
-gulp.task 'livereload', ->
-  gulp.src ''
-    .pipe connect.reload()
-
 gulp.task 'sass', ->
-  gulp.src ['src/sass/*.sass', 'src/sass/styles/*.sass']
+  gulp.src 'src/sass/*.sass'
     .pipe plumber()
     .pipe concat 'style.sass'
-    .pipe sass
-      compass: true
-      bundleExec:true
+    .pipe sass()
     .pipe prefixer 'last 3 version'
     .pipe mincss()
     .pipe plumber.stop()
@@ -119,7 +111,6 @@ gulp.task 'watch', ->
   gulp.watch 'src/jade/**', ['jade']
   gulp.watch 'src/coffee/**', ['coffee']
   gulp.watch 'src/sass/**', ['sass']
-  gulp.watch 'src/**', ['livereload']
 
 ## Tasks
 # Build Task
@@ -128,4 +119,4 @@ gulp.task 'build', ->
 
 # Develop Task
 gulp.task 'server', ->
-  sequence 'build', ['connect', 'watch']
+  sequence 'build', ['webserver', 'watch']

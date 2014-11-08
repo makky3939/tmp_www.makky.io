@@ -1,6 +1,7 @@
 'use strict'
 angular.module('makkyio')
   .controller('HeaderCtrl', ($scope, $location) ->
+    $scope.isCollapsed = false
     $scope.activeTab = $location.$$path.split('/')[1] || 'index'
     $scope.isActive = (path) ->
       return $scope.activeTab == path

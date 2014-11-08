@@ -1,12 +1,13 @@
 .container.tool
-  h1
-    i.fa.fa-angle-right.tool_header_icon
-    |Tool
-  .row
+  .page-header
+    h1
+      i.fa.fa-angle-right.tool_header_icon
+      |Tool
+  .page-body
     .col-md-6(ng-repeat= "item in tools")
       .panel.panel-default
         .panel-body
           h4 {{item.title}}
           img(ng-src="{{item.image_path[0]}}")
         .panel-footer
-          a(href= "{{item.link_path}}") Link
+          a.btn.btn-default(href= "{{item.link_path}}") Link

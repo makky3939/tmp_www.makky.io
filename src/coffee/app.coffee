@@ -19,7 +19,7 @@ ga "create", "UA-47562530-1", "makky.io"
 # Angular App
 angular
   .module('makkyio',
-    ['ui.router', 'angulartics', 'angulartics.google.analytics']
+    ['ui.router', 'angulartics', 'angulartics.google.analytics', 'ui.bootstrap']
   )
   .config(($stateProvider, $urlRouterProvider) ->
     $urlRouterProvider.otherwise "/"

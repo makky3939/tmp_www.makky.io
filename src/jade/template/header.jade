@@ -1,12 +1,12 @@
 nav#top.navbar.navbar-inverse.navbar-fixed-top.header(role="navigation", ng-controller="HeaderCtrl")
   .container-fluid
     .navbar-header
-      button.navbar-toggle(type="button", data-toggle="collapse", data-target="#navbar-collapse-1")
-        span.sr-only Toggle Navigation
+      button.navbar-toggle(type="button", data-toggle="collapse", ng-click="isCollapsed = !isCollapsed")
+        span.sr-only Toggle
         - for i in [,,,]
           span.icon-bar
 
-    #navbar-collapse-1.collapse.navbar-collapse
+    nav.hidden-xs
       ul.nav.navbar-nav.navbar-left
         li(ng-class="{active: isActive('index')}", ng-click="changeTab('index')")
           a(href="#/index") Top
@@ -16,8 +16,6 @@ nav#top.navbar.navbar-inverse.navbar-fixed-top.header(role="navigation", ng-cont
           a(href="#/portfolio") Portfolio
         li(ng-class="{active: isActive('about')}", ng-click="changeTab('about')")
           a(href="#/about") About
-
-
       ul.nav.navbar-nav.navbar-right
         li(ng-class="{active: isActive('blog')}", ng-click="changeTab('blog')")
           a(href="http://blog.makkysnote.org", target="_brank") Blog
@@ -25,3 +23,20 @@ nav#top.navbar.navbar-inverse.navbar-fixed-top.header(role="navigation", ng-cont
           a(href="https://plus.google.com/u/0/photos/103944930745515141285/albums", target="_brank") Picture
         li(ng-class="{active: isActive('contact')}", ng-click="changeTab('contact')")
           a(href="http://blog.makkysnote.org/contact/", target="_brank") Contact
+
+    nav.nav-collapse.collapse(collapse="!isCollapsed")
+      ul.nav.navbar-nav.visible-xs
+        li
+          a(href="#/index", ng-click="isCollapsed = !isCollapsed") Top
+        li
+          a(href="#/tool", ng-click="isCollapsed = !isCollapsed") Tool
+        li
+          a(href="#/portfolio", ng-click="isCollapsed = !isCollapsed") Portfolio
+        li
+          a(href="#/about", ng-click="isCollapsed = !isCollapsed") About
+        li
+          a(href="http://blog.makkysnote.org", target="_brank", ng-click="isCollapsed = !isCollapsed") Blog
+        li
+          a(href="https://plus.google.com/u/0/photos/103944930745515141285/albums", target="_brank", ng-click="isCollapsed = !isCollapsed") Picture
+        li
+          a(href="http://blog.makkysnote.org/contact/", target="_brank", ng-click="isCollapsed = !isCollapsed") Contact

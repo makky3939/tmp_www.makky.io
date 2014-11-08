@@ -56,6 +56,11 @@ gulp.task 'bower', ->
     ]
       .pipe gulp.dest './dst/lib/fontawesome/'
 
+    gulp.src [
+      'bower_components/angular-bootstrap/ui-bootstrap.min.js'
+      'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js']
+      .pipe gulp.dest './dst/lib/ui-bootstrap/'
+
 gulp.task 'clean', ->
   gulp.src 'dst'
     .pipe clean()

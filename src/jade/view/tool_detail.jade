@@ -1,27 +1,29 @@
 .container.tool_detail
-  h1 
-    a(href="#/tool") Tool
-    |/{{tool.title}}
-  .panel.panel-default
-    .panel-body
-      .col-md-12.page-section
-        .col-md-9
-          p.description {{tool.description}}
-        .col-md-3
-          p 作成日:{{tool.created_at}}
-          p 更新日:{{tool.updated_at}}
-          p タグ:{{tags}}
+  .page-header
+    h1 
+      a(href="#/tool") Tool
+      |/{{tool.title}}
+  .col-xs-12
+    .panel.panel-default
+      .panel-body
+        .col-md-12.page-section
+          .col-md-9
+            p.description {{tool.description}}
+          .col-md-3
+            p 作成日:{{tool.created_at}}
+            p 更新日:{{tool.updated_at}}
+            p タグ:{{tags}}
 
-      .col-md-12.page-section
-        img(ng-src="{{tool.image_path[0]}}")
+        .col-md-12.page-section
+          img(ng-src="{{tool.image_path[0]}}")
 
-      .col-md-12
-        a.btn.btn-success.col-md-3.btn-lg(href="{{tool.blog_path}}", ng-Show="{{tool.blog_path}}", target="_blank")
-          i.fa.fa-calendar
-          |Blog
-        a.btn.btn-default.col-md-3.btn-lg(href="{{tool.git_path}}", ng-Show="{{tool.git_path}}", target="_blank")
-          i.fa.fa-github
-          |Git
-        a.btn.btn-default.col-md-3.btn-lg(href="{{tool.live_path}}", ng-Show="{{tool.live_path}}", target="_blank")
-          i.fa.fa-play-circle
-          |Live
+        .col-md-12
+          a.btn.btn-success.col-md-3.btn-lg(href="{{tool.blog_path}}", ng-Show="{{tool.blog_path}}", target="_blank")
+            i.fa.fa-calendar
+            |Blog
+          a.btn.btn-default.col-md-3.btn-lg(href="{{tool.git_path}}", ng-Show="{{tool.git_path}}", target="_blank")
+            i.fa.fa-github
+            |Git
+          a.btn.btn-default.col-md-3.btn-lg(href="{{tool.live_path}}", ng-Show="{{tool.live_path}}", target="_blank")
+            i.fa.fa-play-circle
+            |Live

@@ -40,15 +40,6 @@ angular
         templateUrl: 'view/tool_detail.html'
         controller: 'ToolDetailCtrl'
       })
-      .state('/tool/microphone_visualizer/live', {
-        url: "/tool/microphone_visualizer/live"
-        templateUrl: 'app/microphone_visualizer.html'
-      })
-
-      .state('/tool/pon_de_matcha/live', {
-        url: "/tool/pon_de_matcha/live"
-        templateUrl: 'app/pon_de_matcha.html'
-      })
 
       .state('/portfolio', {
         url: '/portfolio'

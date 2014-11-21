@@ -11,7 +11,7 @@ angular.module('makkyio')
             "image/tool/pon_de_matcha.png"
           ]
           app_path: "app/pon_de_matcha.html"
-          live_path: "#/tool/pon_de_matcha/live"
+          live_path: "http://app.makky.io/pon_de_matcha"
           tags: [""]
           description: "SVGでポン・デ・抹茶チョコを描画してみました。"
           updated_at: "2014/06/22"
@@ -25,7 +25,7 @@ angular.module('makkyio')
             "image/tool/microphone_visualizer.png"
           ]
           app_path: "app/microphone_visualizer.html"
-          live_path: "#/tool/microphone_visualizer/live"
+          live_path: "http://app.makky.io/microphone_visualizer"
           tags: [""]
           description:
             "Web Audio APIで取得したマイクの音を用いて、Canvasのアニメーションを描画します。

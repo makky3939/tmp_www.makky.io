@@ -96,11 +96,6 @@ gulp.task 'jade', ->
     .pipe jade()
     .pipe plumber.stop()
     .pipe gulp.dest 'dst/view/'
-  gulp.src 'src/jade/app/*.jade'
-    .pipe plumber()
-    .pipe jade()
-    .pipe plumber.stop()
-    .pipe gulp.dest 'dst/app/'
 
 gulp.task 'sass', ->
   gulp.src 'src/sass/*.sass'

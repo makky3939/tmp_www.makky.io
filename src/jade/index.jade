@@ -1,13 +1,3 @@
-doctype
-html
-  head
-    title Makky.io
-    include template/meta
-    include template/asset
+extends layout/default
 
-  body(ng-app="makkyio")
-    include template/header
-    
-    div(ui-view="")
-
-    include template/footer
+block contents

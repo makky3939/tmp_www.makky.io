@@ -67,10 +67,12 @@ gulp.task 'clean', ->
 
 gulp.task 'coffee', ->
   gulp.src 'src/coffee/**/*.coffee'
-    .pipe plumber()
     .pipe coffeelint()
     .pipe coffeelint.reporter()
+    .pipe plumber()
+    .pipe concat 'app.coffee'
     .pipe coffee()
+    # .pipe uglify {mangle: false}
     .pipe plumber.stop()
     .pipe gulp.dest 'dst/js/'
 
@@ -79,6 +81,7 @@ gulp.task 'webserver', ->
     .pipe webserver {
       host: '0.0.0.0'
       port: 3939
+      fallback: 'dst/index.html'
     }
 
 gulp.task 'copy', ->

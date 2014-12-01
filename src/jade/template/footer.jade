@@ -1,22 +1,14 @@
-.scroll-top-button(ng-controller="ScrollTopCtrl")
-  a(ng-click="top()", ng-class="{hide: isHide}") Top
-
-nav.navbar.navbar-inverse.footer_menu
-  .container-fluid
-    .collapse.navbar-collapse
-      ul.nav.navbar-nav.navbar-right
-        include ../template/menu
-
-nav.navbar.footer
-  .container-fluid
-    .col-sm-6.col-xs-12
-      p &copy; Makky.io All Rights Reserved.
-    .col-sm-6.col-xs-12.text-right
-      a(href="https://github.com/makky3939", target="_brank")
-        i.fa.fa-github.fa-2x
-      a(href="https://www.facebook.com/masaki.kobayashi.1485", target="_brank")
-        i.fa.fa-facebook.fa-2x
-      a(href="https://plus.google.com/u/0/+MasakiKobayashi_makky_/posts", target="_brank")
-        i.fa.fa-google-plus.fa-2x
-      a(href="https://twitter.com/_Makky_", target="_brank")
-        i.fa.fa-twitter.fa-2x
+.footer
+  .container
+    .row
+      .col-sm-6.col-xs-12
+        p &copy; Makky.io All Rights Reserved.
+      .col-sm-6.col-xs-12.footer-icons
+        a(href="https://github.com/makky3939", target="_brank")
+          i.fa.fa-github
+        a(href="https://www.facebook.com/masaki.kobayashi.1485", target="_brank")
+          i.fa.fa-facebook
+        a(href="https://plus.google.com/u/0/+MasakiKobayashi_makky_/posts", target="_brank")
+          i.fa.fa-google-plus
+        a(href="https://twitter.com/_Makky_", target="_brank")
+          i.fa.fa-twitter

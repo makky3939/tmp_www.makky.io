@@ -82,7 +82,7 @@ gulp.task 'sass', ->
   gulp.src 'src/sass/*.sass'
     .pipe plumber {errorHandler: notify.onError('<%= error.message %>')}
     .pipe concat 'style.sass'
-    .pipe sass()
+    .pipe sass {noCache: true}
     .pipe autoprefixer ['last 2 version', 'ie 8', 'ie 9']
     .pipe minifycss()
     .pipe plumber.stop()
@@ -93,7 +93,6 @@ gulp.task 'watch', ->
   gulp.watch 'src/coffee/**', ['coffee', 'livereload']
   gulp.watch 'src/sass/**', ['sass', 'livereload']
   gulp.watch 'src/image/**', ['copy', 'livereload']
-
 
 # Build Task
 gulp.task 'build', ['clean'], -> 

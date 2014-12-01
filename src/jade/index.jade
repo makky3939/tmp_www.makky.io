@@ -1,4 +1,24 @@
 extends layout/default
 
 block contents
-  h1 index
+  .jumbotron
+    .container
+      .text-center
+        .row.text-center
+          .col-sm-2.col-sm-offset-5.col-xs-4.col-xs-offset-4
+            img.img-circle(src='image/logo_MK_512.png')
+        h1 makky.io
+        p Develop! Develop!! Develop!!!
+
+  .page-body
+    .container
+      .row
+        .col-sm-3
+          .list-group
+            a.list-group-item(href='works.html') Works
+            a.list-group-item(href='products.html') Products
+            a.list-group-item(href='about.html') About
+
+        .col-sm-9
+          h2 Blog
+          .js-post-list.posts

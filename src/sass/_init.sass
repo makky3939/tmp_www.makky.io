@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700)
+@import url(http://fonts.googleapis.com/css?family=Poiret+One)
+
+body
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+  font-size: 16px
+  font-smoothing: antialiased
+  color: $DarkGray
+
+h1,
+h2,
+h3,
+h4,
+h5
+  margin-top: 0
+  color: $DarkGray
+  font-family: 'Roboto', "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+  font-weight: 300
+
+.img-circle
+  background: $LightGray
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: contain
+  display: inline-block
+  height: 100%
+  width: 100%
+  &:before
+    content: ""
+    display: block
+    padding-top: 100%
+
+a
+  color: $Blue
+  &:hover
+    color: $DarkBlue
+
+hr
+  border-color: $Gray

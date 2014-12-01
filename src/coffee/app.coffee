@@ -1,74 +1,30 @@
-'use strict'
+$ ->
+  $.ajax {
+    dataType: 'xml',
+    url: 'http://blog.makky.io/feed',
+    success: (data) ->
+      $(data).find('item').each ->
+        date = new Date $(this).find('pubDate').text()
+        link = $(this).find('link').text()
+        title = $(this).find('title').text()
+        description = $(this).find('description').text().replace('[&#8230;]', '')
 
-# GoogleAnalytics Tracking code
-((i, s, o, g, r, a, m) ->
-  i["GoogleAnalyticsObject"] = r
-  i[r] = i[r] or ->
-    (i[r].q = i[r].q or []).push arguments
-    return
-  i[r].l = 1 * new Date()
-  a = s.createElement(o)
-  m = s.getElementsByTagName(o)[0]
-  a.async = 1
-  a.src = g
-  m.parentNode.insertBefore a, m
-) window, document, "script", "http://www.google-analytics.com/analytics.js",
-"ga"
-ga "create", "UA-47562530-1", "makky.io"
+        $post = """
+          <div class='post'>
+            <p class='post-date'>
+              #{date.getFullYear()}/#{date.getMonth()}/#{date.getDay()} #{date.getHours()}:#{date.getMinutes()}:#{date.getSeconds()}
+            </p>
+            <h3>
+              <a href='#{link}' target='_blank'>#{title}</a>
+            </h3>
+            <p>
+              #{description}
+              <a href='#{link}' target='_blank'>続きを読む</a>
+            </p>
+          </div>
+        """
 
-
-# Angular App
-app =
-  angular.module 'makkyio', [
-    'angulartics',
-    'angulartics.google.analytics',
-    'ui.bootstrap',
-    'ui.router'
-  ]
-
-app.config ($stateProvider) ->
-  $stateProvider
-    .state 'index',
-      url: "/"
-      templateUrl: "view/index.html"
-      controller: 'IndexCtrl'
-
-  $stateProvider
-    .state 'tool',
-      url: "/tool"
-      templateUrl: 'view/tool.html'
-      controller: 'ToolCtrl'
-    .state 'tool.detail',
-      url: "/tool/:tool_name"
-      templateUrl: 'view/tool_detail.html'
-      controller: 'ToolDetailCtrl'
-
-  $stateProvider
-    .state 'portfolio',
-      url: '/portfolio'
-      templateUrl: 'view/portfolio.html'
-      controller: 'PortfolioCtrl'
-    .state 'portfolio.detail',
-      url: '/portfolio/:portfolio_type/:portfolio_name'
-      templateUrl: 'view/portfolio_detail.html'
-      controller: 'PortfolioDetailCtrl'
-
-  $stateProvider
-    .state 'about',
-      url: "/about"
-      templateUrl: 'view/about.html'
-      controller: 'AboutCtrl'
-  return 0
-# $state.go('list', { item: "Ringo" });
-app.config ($urlRouterProvider) ->
-  $urlRouterProvider.otherwise '/'
-  return 0
-
-app.config ($analyticsProvider) ->
-  $analyticsProvider.virtualPageviews true
-  return 0
-
-app.config ($locationProvider) ->
-  $locationProvider.html5Mode.enabled = true
-  $locationProvider.html5Mode.requireBase = false
-  return 0
+        $('.js-post-list').append $post
+        return 0
+      return 0
+  }

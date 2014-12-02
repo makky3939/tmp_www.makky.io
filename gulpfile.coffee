@@ -66,6 +66,8 @@ gulp.task 'connect', ->
 gulp.task 'copy', ->
   gulp.src 'src/image/**', {base: 'src/image'}
     .pipe gulp.dest 'dst/image/'
+  gulp.src 'src/robot/**'
+    .pipe gulp.dest 'dst/'
 
 gulp.task 'jade', ->
   gulp.src 'src/jade/*.jade'

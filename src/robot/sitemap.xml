@@ -7,11 +7,6 @@
   <changefreq>always</changefreq>
 </url>
 <url>
-  <loc>http://makky.io/index.html</loc>
-  <priority>0.8</priority>
-  <changefreq>always</changefreq>
-</url>
-<url>
   <loc>http://makky.io/works.html</loc>
   <priority>0.8</priority>
   <changefreq>always</changefreq>

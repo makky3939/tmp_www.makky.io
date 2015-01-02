@@ -9,7 +9,7 @@ $ ->
 
         post_date =
           date.getFullYear() + '/' +
-          date.getMonth() + '/' +
+          (date.getMonth() + 1) + '/' +
           date.getDay() + '/' +
           ' ' +
           date.getHours() + ':' +

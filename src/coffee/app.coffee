@@ -1,7 +1,7 @@
 $ ->
   $.ajax {
     dataType: 'xml',
-    url: 'http://blog.makky.io/feed',
+    url: 'http://blog.makky.io/?feed=rss2',
     success: (data) ->
       $(data).find('item').each ->
         item = $(this)
@@ -9,7 +9,7 @@ $ ->
 
         post_date =
           date.getFullYear() + '/' +
-          date.getMonth() + '/' +
+          (date.getMonth() + 1) + '/' +
           date.getDay() + '/' +
           ' ' +
           date.getHours() + ':' +

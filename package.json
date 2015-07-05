@@ -25,6 +25,8 @@
   },
   "devDependencies": {},
   "scripts": {
+    "build": "gulp build",
+    "serve": "gulp server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

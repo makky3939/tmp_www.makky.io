@@ -30,8 +30,8 @@ RUN gem install sass
 RUN git clone https://github.com/makky3939/www.makky.io.git
 
 # build
-RUN cd makky.io && npm install && npm run build
-RUN cp -r makky.io/dst/* /usr/share/nginx/html/
+RUN cd www.makky.io && npm install && npm run build
+RUN cp -r www.makky.io/dst/* /usr/share/nginx/html/
 
 # port open
 EXPOSE 80

@@ -1,7 +1,7 @@
 $ ->
   $.ajax {
     dataType: 'xml',
-    url: 'http://blog.makky.io/?feed=rss2',
+    url: 'http://blog.makky.io/feed.xml',
     success: (data) ->
       $(data).find('item').each ->
         item = $(this)
@@ -23,10 +23,13 @@ $ ->
           .find('description')
           .text()
           .replace('[&#8230;]', '')
+        category = item
+          .find('category').text()
 
         $post = """
           <div class='post'>
             <p class='post-date'>
+              <span class='label label-default'>#{category}</span>
               #{post_date}
             </p>
             <h3>

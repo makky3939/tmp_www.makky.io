@@ -96,8 +96,9 @@ gulp.task 'watch', ->
   gulp.watch 'src/sass/**', ['sass', 'livereload']
   gulp.watch 'src/image/**', ['copy', 'livereload']
 
+
 # Build Task
-gulp.task 'build', ['clean'], -> 
+gulp.task 'build', ['clean'], ->
   sequence ['bower', 'copy', 'sass', 'coffee', 'jade']
 
 # Develop Task
